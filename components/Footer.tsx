@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Fuel, Github, Mail, ExternalLink } from 'lucide-react';
+import { Fuel, GitHub, Mail, ExternalLink } from 'lucide-react';
 
 export function Footer() {
   return (
