@@ -79,192 +79,238 @@ function extractCity(address: string, place: string): { city: string; county: st
   return { city, county };
 }
 
+/**
+ * Parses all fuel table rows from a degalukaina.lt HTML page
+ */
+function parseStationsFromPageHtml(
+  html: string,
+  nowIso: string,
+  stationsMap: Map<string, DegalukainaScraperResult['stations'][0]>,
+  pricesList: RawFuelPrice[]
+) {
+  const rowRegex = /<tr([^>]*)>([\s\S]*?)<\/tr>/gi;
+  let match: RegExpExecArray | null;
+
+  while ((match = rowRegex.exec(html)) !== null) {
+    const trAttrs = match[1];
+    const trContent = match[2];
+
+    if (trAttrs.includes('date-row')) continue;
+
+    const latMatch = trAttrs.match(/data-lat="([^"]+)"/);
+    const lonMatch = trAttrs.match(/data-lon="([^"]+)"/);
+    if (!latMatch || !lonMatch) continue;
+
+    const lat = parseFloat(latMatch[1]);
+    const lng = parseFloat(lonMatch[1]);
+    if (isNaN(lat) || isNaN(lng)) continue;
+
+    const stationId = `dk-${lat.toFixed(4)}-${lng.toFixed(4)}`;
+    if (stationsMap.has(stationId)) continue; // Avoid duplicate rows across pages
+
+    const updatedMatch = trAttrs.match(/data-updated="([^"]+)"/);
+    const hoursMatch = trAttrs.match(/data-hours="([^"]+)"/);
+    const ratingMatch = trAttrs.match(/data-rating="([^"]+)"/);
+    const reviewsMatch = trAttrs.match(/data-reviews="([^"]+)"/);
+
+    const nameMatch = trContent.match(/class="stationName"[^>]*>([^<]+)<\/a>/i);
+    const rawName = nameMatch ? nameMatch[1].trim() : 'Degalinė';
+
+    const placeMatch = trContent.match(/data-place="([^"]+)"/i);
+    const place = placeMatch ? placeMatch[1].trim() : '';
+
+    const addrMatch = trContent.match(/class="js-addr[^"]*"[^>]*>\s*<span>([^<]+)<\/span>/i);
+    const address = addrMatch ? addrMatch[1].trim() : '';
+
+    // Prices extraction
+    const dieselMatch = trContent.match(/class="fuel\s+diesel"[^>]*>([0-9\.]+)<\/span>/i);
+    const b95Match = trContent.match(/class="fuel\s+b95"[^>]*>([0-9\.]+)<\/span>/i);
+    const b98Match = trContent.match(/class="fuel\s+b98"[^>]*>([0-9\.]+)<\/span>/i);
+    const lpgMatch = trContent.match(/class="fuel\s+lpg"[^>]*>([0-9\.]+)<\/span>/i);
+
+    const diesel = dieselMatch ? parseFloat(dieselMatch[1]) : undefined;
+    const b95 = b95Match ? parseFloat(b95Match[1]) : undefined;
+    const b98 = b98Match ? parseFloat(b98Match[1]) : undefined;
+    const lpg = lpgMatch ? parseFloat(lpgMatch[1]) : undefined;
+
+    // Price sanity filter: In Lithuania, diesel and 95 are typically 1.40 - 2.80 EUR.
+    const validDiesel = diesel && diesel >= 1.40 && diesel <= 2.80 ? diesel : undefined;
+    const validB95 = b95 && b95 >= 1.40 && b95 <= 2.80 ? b95 : undefined;
+    const validB98 = b98 && b98 >= 1.50 && b98 <= 2.95 ? b98 : undefined;
+    const validLpg = lpg && lpg >= 0.50 && lpg <= 1.40 ? lpg : undefined;
+
+    const brand = extractBrand(rawName);
+    const { city, county } = extractCity(address, place);
+    const updatedAtStr = updatedMatch ? `${updatedMatch[1]}T12:00:00.000Z` : nowIso;
+
+    const stationData = {
+      id: stationId,
+      name: rawName,
+      brand,
+      address: address || place,
+      city,
+      county,
+      lat,
+      lng,
+      hours: hoursMatch ? hoursMatch[1] : undefined,
+      rating: ratingMatch ? parseFloat(ratingMatch[1]) : undefined,
+      reviews: reviewsMatch ? parseInt(reviewsMatch[1], 10) : undefined,
+      updatedAt: updatedAtStr,
+      prices: {
+        diesel: validDiesel,
+        gasoline_95: validB95,
+        gasoline_98: validB98,
+        lpg: validLpg
+      }
+    };
+
+    stationsMap.set(stationId, stationData);
+
+    if (validDiesel) {
+      pricesList.push({
+        stationId,
+        brand,
+        name: rawName,
+        address,
+        lat,
+        lng,
+        fuelType: 'diesel',
+        pricePerLiter: validDiesel,
+        currency: 'EUR',
+        sourceName: 'Degalukaina.lt',
+        sourceUpdatedAt: updatedAtStr,
+        fetchedAt: nowIso
+      });
+    }
+
+    if (validB95) {
+      pricesList.push({
+        stationId,
+        brand,
+        name: rawName,
+        address,
+        lat,
+        lng,
+        fuelType: 'gasoline_95',
+        pricePerLiter: validB95,
+        currency: 'EUR',
+        sourceName: 'Degalukaina.lt',
+        sourceUpdatedAt: updatedAtStr,
+        fetchedAt: nowIso
+      });
+    }
+
+    if (validB98) {
+      pricesList.push({
+        stationId,
+        brand,
+        name: rawName,
+        address,
+        lat,
+        lng,
+        fuelType: 'gasoline_98',
+        pricePerLiter: validB98,
+        currency: 'EUR',
+        sourceName: 'Degalukaina.lt',
+        sourceUpdatedAt: updatedAtStr,
+        fetchedAt: nowIso
+      });
+    }
+
+    if (validLpg) {
+      pricesList.push({
+        stationId,
+        brand,
+        name: rawName,
+        address,
+        lat,
+        lng,
+        fuelType: 'lpg',
+        pricePerLiter: validLpg,
+        currency: 'EUR',
+        sourceName: 'Degalukaina.lt',
+        sourceUpdatedAt: updatedAtStr,
+        fetchedAt: nowIso
+      });
+    }
+  }
+}
+
 export async function scrapeDegalukaina(): Promise<DegalukainaScraperResult> {
   const startTime = Date.now();
-  const url = 'https://degalukaina.lt';
+  const baseUrl = 'https://degalukaina.lt';
 
   const sourceStatus: SourceStatus = {
     id: 'degalukaina-lt-crawler',
     name: 'Degalukaina.lt Live Scraper',
-    description: 'Tiesioginis virš 730 Lietuvos degalinių kainų nuskaitymas realiu laiku',
+    description: 'Tiesioginis virš 730 Lietuvos degalinių kainų nuskaitymas realiu laiku iš visų puslapių',
     type: 'live_station',
     status: 'online',
     stationsCount: 0,
     lastChecked: new Date().toISOString()
   };
 
+  const reqHeaders = {
+    'User-Agent':
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+  };
+
   try {
-    const res = await fetchWithRetry(url, {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-      },
+    // 1. Fetch Page 1
+    const res1 = await fetchWithRetry(baseUrl, {
+      headers: reqHeaders,
       next: { revalidate: 900 } // Cache for 15 mins
     });
 
-    sourceStatus.latencyMs = Date.now() - startTime;
-
-    if (!res.ok) {
+    if (!res1.ok) {
       sourceStatus.status = 'degraded';
-      sourceStatus.errorMessage = `HTTP ${res.status}: ${res.statusText}`;
+      sourceStatus.errorMessage = `HTTP ${res1.status}: ${res1.statusText}`;
+      sourceStatus.latencyMs = Date.now() - startTime;
       return { prices: [], stations: [], status: sourceStatus };
     }
 
-    const html = await res.text();
+    const html1 = await res1.text();
     sourceStatus.lastSuccess = new Date().toISOString();
 
     const normalizedPrices: RawFuelPrice[] = [];
-    const stationsList: DegalukainaScraperResult['stations'] = [];
+    const stationsMap = new Map<string, DegalukainaScraperResult['stations'][0]>();
     const nowIso = new Date().toISOString();
 
-    // Regex to match every table row in .fuel-table-modern
-    const rowRegex = /<tr([^>]*)>([\s\S]*?)<\/tr>/gi;
-    let match: RegExpExecArray | null;
+    // Parse Page 1
+    parseStationsFromPageHtml(html1, nowIso, stationsMap, normalizedPrices);
 
-    while ((match = rowRegex.exec(html)) !== null) {
-      const trAttrs = match[1];
-      const trContent = match[2];
+    // Detect total pages (from pagination links, e.g., ?page=19)
+    const pageMatches = [...html1.matchAll(/[?&]page=(\d+)/g)].map((m) => parseInt(m[1], 10));
+    const maxPages = pageMatches.length > 0 ? Math.max(...pageMatches) : 19;
 
-      if (trAttrs.includes('date-row')) continue;
+    // 2. Fetch remaining pages (2..maxPages) with controlled concurrency
+    const remainingPages = Array.from({ length: maxPages - 1 }, (_, i) => i + 2);
+    const concurrency = 6;
 
-      const latMatch = trAttrs.match(/data-lat="([^"]+)"/);
-      const lonMatch = trAttrs.match(/data-lon="([^"]+)"/);
-      if (!latMatch || !lonMatch) continue;
-
-      const lat = parseFloat(latMatch[1]);
-      const lng = parseFloat(lonMatch[1]);
-      if (isNaN(lat) || isNaN(lng)) continue;
-
-      const updatedMatch = trAttrs.match(/data-updated="([^"]+)"/);
-      const hoursMatch = trAttrs.match(/data-hours="([^"]+)"/);
-      const ratingMatch = trAttrs.match(/data-rating="([^"]+)"/);
-      const reviewsMatch = trAttrs.match(/data-reviews="([^"]+)"/);
-
-      const nameMatch = trContent.match(/class="stationName"[^>]*>([^<]+)<\/a>/i);
-      const rawName = nameMatch ? nameMatch[1].trim() : 'Degalinė';
-
-      const placeMatch = trContent.match(/data-place="([^"]+)"/i);
-      const place = placeMatch ? placeMatch[1].trim() : '';
-
-      const addrMatch = trContent.match(/class="js-addr[^"]*"[^>]*>\s*<span>([^<]+)<\/span>/i);
-      const address = addrMatch ? addrMatch[1].trim() : '';
-
-      // Prices extraction
-      const dieselMatch = trContent.match(/class="fuel\s+diesel"[^>]*>([0-9\.]+)<\/span>/i);
-      const b95Match = trContent.match(/class="fuel\s+b95"[^>]*>([0-9\.]+)<\/span>/i);
-      const b98Match = trContent.match(/class="fuel\s+b98"[^>]*>([0-9\.]+)<\/span>/i);
-      const lpgMatch = trContent.match(/class="fuel\s+lpg"[^>]*>([0-9\.]+)<\/span>/i);
-
-      const diesel = dieselMatch ? parseFloat(dieselMatch[1]) : undefined;
-      const b95 = b95Match ? parseFloat(b95Match[1]) : undefined;
-      const b98 = b98Match ? parseFloat(b98Match[1]) : undefined;
-      const lpg = lpgMatch ? parseFloat(lpgMatch[1]) : undefined;
-
-      // Price sanity filter: In 2026 Lithuania, diesel and 95 are typically 1.70 - 2.40 EUR.
-      // Filter out impossible or broken scrapings (< 1.20 EUR for 95/diesel, < 0.50 EUR for LPG)
-      const validDiesel = diesel && diesel >= 1.40 && diesel <= 2.80 ? diesel : undefined;
-      const validB95 = b95 && b95 >= 1.40 && b95 <= 2.80 ? b95 : undefined;
-      const validB98 = b98 && b98 >= 1.50 && b98 <= 2.95 ? b98 : undefined;
-      const validLpg = lpg && lpg >= 0.50 && lpg <= 1.40 ? lpg : undefined;
-
-      const brand = extractBrand(rawName);
-      const { city, county } = extractCity(address, place);
-      const stationId = `dk-${lat.toFixed(4)}-${lng.toFixed(4)}`;
-      const updatedAtStr = updatedMatch ? `${updatedMatch[1]}T12:00:00.000Z` : nowIso;
-
-      const stationData = {
-        id: stationId,
-        name: rawName,
-        brand,
-        address: address || place,
-        city,
-        county,
-        lat,
-        lng,
-        hours: hoursMatch ? hoursMatch[1] : undefined,
-        rating: ratingMatch ? parseFloat(ratingMatch[1]) : undefined,
-        reviews: reviewsMatch ? parseInt(reviewsMatch[1], 10) : undefined,
-        updatedAt: updatedAtStr,
-        prices: {
-          diesel: validDiesel,
-          gasoline_95: validB95,
-          gasoline_98: validB98,
-          lpg: validLpg
-        }
-      };
-
-      stationsList.push(stationData);
-
-      if (validDiesel) {
-        normalizedPrices.push({
-          stationId,
-          brand,
-          name: rawName,
-          address,
-          lat,
-          lng,
-          fuelType: 'diesel',
-          pricePerLiter: validDiesel,
-          currency: 'EUR',
-          sourceName: 'Degalukaina.lt',
-          sourceUpdatedAt: updatedAtStr,
-          fetchedAt: nowIso
-        });
-      }
-
-      if (validB95) {
-        normalizedPrices.push({
-          stationId,
-          brand,
-          name: rawName,
-          address,
-          lat,
-          lng,
-          fuelType: 'gasoline_95',
-          pricePerLiter: validB95,
-          currency: 'EUR',
-          sourceName: 'Degalukaina.lt',
-          sourceUpdatedAt: updatedAtStr,
-          fetchedAt: nowIso
-        });
-      }
-
-      if (validB98) {
-        normalizedPrices.push({
-          stationId,
-          brand,
-          name: rawName,
-          address,
-          lat,
-          lng,
-          fuelType: 'gasoline_98',
-          pricePerLiter: validB98,
-          currency: 'EUR',
-          sourceName: 'Degalukaina.lt',
-          sourceUpdatedAt: updatedAtStr,
-          fetchedAt: nowIso
-        });
-      }
-
-      if (validLpg) {
-        normalizedPrices.push({
-          stationId,
-          brand,
-          name: rawName,
-          address,
-          lat,
-          lng,
-          fuelType: 'lpg',
-          pricePerLiter: validLpg,
-          currency: 'EUR',
-          sourceName: 'Degalukaina.lt',
-          sourceUpdatedAt: updatedAtStr,
-          fetchedAt: nowIso
-        });
-      }
+    for (let i = 0; i < remainingPages.length; i += concurrency) {
+      const pageBatch = remainingPages.slice(i, i + concurrency);
+      await Promise.all(
+        pageBatch.map(async (pageNum) => {
+          try {
+            const pageUrl = `${baseUrl}/?page=${pageNum}`;
+            const res = await fetchWithRetry(pageUrl, {
+              headers: reqHeaders,
+              next: { revalidate: 900 }
+            });
+            if (res.ok) {
+              const pageHtml = await res.text();
+              parseStationsFromPageHtml(pageHtml, nowIso, stationsMap, normalizedPrices);
+            }
+          } catch (pageErr) {
+            console.warn(`[Degalukaina Scraper] Warning on page ${pageNum}:`, pageErr);
+          }
+        })
+      );
     }
 
+    const stationsList = Array.from(stationsMap.values());
+    sourceStatus.latencyMs = Date.now() - startTime;
     sourceStatus.stationsCount = stationsList.length;
 
     return {

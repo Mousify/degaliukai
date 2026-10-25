@@ -1,0 +1,332 @@
+{
+  "app/api/cron/route.ts": {
+    "mtime": 1792157535.985731,
+    "seen": 1792940698.284234,
+    "ast_hash": "fa3aa9211b89e44f4f9a9ac5ac9a36a7",
+    "semantic_hash": "fa3aa9211b89e44f4f9a9ac5ac9a36a7"
+  },
+  "app/api/national-trends/route.ts": {
+    "mtime": 1792156221.4259412,
+    "seen": 1792940698.2842417,
+    "ast_hash": "b26c3e6f72d8a2dd73a26e5ebab94c26",
+    "semantic_hash": "b26c3e6f72d8a2dd73a26e5ebab94c26"
+  },
+  "app/api/prices/route.ts": {
+    "mtime": 1792157529.0603034,
+    "seen": 1792940698.2842448,
+    "ast_hash": "b7863772890998fcf4e13c849c100ddd",
+    "semantic_hash": "b7863772890998fcf4e13c849c100ddd"
+  },
+  "app/api/stations/[id]/route.ts": {
+    "mtime": 1792156229.724639,
+    "seen": 1792940698.2842467,
+    "ast_hash": "080282a57da375e4b3361b08f6b23d1d",
+    "semantic_hash": "080282a57da375e4b3361b08f6b23d1d"
+  },
+  "app/layout.tsx": {
+    "mtime": 1792156124.9506502,
+    "seen": 1792940698.2842484,
+    "ast_hash": "7c2e8898e898dc8514895d50aae2d8ab",
+    "semantic_hash": "7c2e8898e898dc8514895d50aae2d8ab"
+  },
+  "app/page.tsx": {
+    "mtime": 1792944749.7665217,
+    "seen": 1792944836.9420846,
+    "ast_hash": "7247b1cdf4a8054a0ee6780abec24ff5",
+    "semantic_hash": ""
+  },
+  "app/statistika/page.tsx": {
+    "mtime": 1792886921.2652588,
+    "seen": 1792940698.2842515,
+    "ast_hash": "5b09b52bf3ef022a205095ca2f7a8266",
+    "semantic_hash": "5b09b52bf3ef022a205095ca2f7a8266"
+  },
+  "components/Footer.tsx": {
+    "mtime": 1792943673.2761097,
+    "seen": 1792943854.1603935,
+    "ast_hash": "83ef86874a6735610c9b6cdd1de2d7e4",
+    "semantic_hash": ""
+  },
+  "components/FuelFilterBar.tsx": {
+    "mtime": 1792944593.09479,
+    "seen": 1792944836.9420912,
+    "ast_hash": "f9c946739b77133d9a9e3407b39cf98c",
+    "semantic_hash": ""
+  },
+  "components/HeroStats.tsx": {
+    "mtime": 1792156004.123133,
+    "seen": 1792940698.2842557,
+    "ast_hash": "9db942a73aa381673b951bfb31d6e0e1",
+    "semantic_hash": "9db942a73aa381673b951bfb31d6e0e1"
+  },
+  "components/LeafletMap.tsx": {
+    "mtime": 1792945042.3072166,
+    "seen": 1792945067.412504,
+    "ast_hash": "fa5a05a0a20223cbc74df4a959a1e9a8",
+    "semantic_hash": ""
+  },
+  "components/MapWrapper.tsx": {
+    "mtime": 1792944645.4140596,
+    "seen": 1792944836.9420967,
+    "ast_hash": "ac57c8cdfcd73d56f74cbbb906cf4891",
+    "semantic_hash": ""
+  },
+  "components/NationalTrendChart.tsx": {
+    "mtime": 1792156116.94763,
+    "seen": 1792940698.2842615,
+    "ast_hash": "4874f4c2fbda8cfc92edc0dd46683ab6",
+    "semantic_hash": "4874f4c2fbda8cfc92edc0dd46683ab6"
+  },
+  "components/Navbar.tsx": {
+    "mtime": 1792886833.336208,
+    "seen": 1792940698.284263,
+    "ast_hash": "d7fde5f8ad3978db9790e7e5de0e6da2",
+    "semantic_hash": "d7fde5f8ad3978db9790e7e5de0e6da2"
+  },
+  "components/SourceStatusModal.tsx": {
+    "mtime": 1792155971.0615957,
+    "seen": 1792940698.284264,
+    "ast_hash": "be187b3d673abc85fd073c9c1d3cc49a",
+    "semantic_hash": "be187b3d673abc85fd073c9c1d3cc49a"
+  },
+  "components/StationDetailModal.tsx": {
+    "mtime": 1792944781.0559275,
+    "seen": 1792944836.942104,
+    "ast_hash": "3ce797b55863a5e4fd2f8da8724f25a4",
+    "semantic_hash": ""
+  },
+  "components/StationList.tsx": {
+    "mtime": 1792944686.0792239,
+    "seen": 1792944836.9421055,
+    "ast_hash": "7fdadb6529fd9e6cd5ba7ddc28fa1fd9",
+    "semantic_hash": ""
+  },
+  "components/StationTable.tsx": {
+    "mtime": 1792156053.2269666,
+    "seen": 1792940698.2842693,
+    "ast_hash": "7c88971ae0a564e7e59f07bdc6cb5a1a",
+    "semantic_hash": "7c88971ae0a564e7e59f07bdc6cb5a1a"
+  },
+  "components/ThemeProvider.tsx": {
+    "mtime": 1792155948.0748696,
+    "seen": 1792940698.2842705,
+    "ast_hash": "27439e4b96a122718a69ad69bc7795d0",
+    "semantic_hash": "27439e4b96a122718a69ad69bc7795d0"
+  },
+  "components/ThemeToggle.tsx": {
+    "mtime": 1792155953.7335763,
+    "seen": 1792940698.2842722,
+    "ast_hash": "3eb0dcc649d5b184e345760b82d6ade3",
+    "semantic_hash": "3eb0dcc649d5b184e345760b82d6ade3"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1792155509.3206034,
+    "seen": 1792940698.2842736,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "lib/aggregate.ts": {
+    "mtime": 1792944810.6481476,
+    "seen": 1792944836.9421165,
+    "ast_hash": "d309e3bc2ef7599184dbead0caefad16",
+    "semantic_hash": ""
+  },
+  "lib/price-estimator.ts": {
+    "mtime": 1792944795.3867316,
+    "seen": 1792944836.9421184,
+    "ast_hash": "d12505823c342af7eeb044a0d49bd527",
+    "semantic_hash": ""
+  },
+  "lib/sources/custom-feeds.ts": {
+    "mtime": 1792157951.6436124,
+    "seen": 1792940698.2842798,
+    "ast_hash": "65516554557edb56de3b064b2aace78e",
+    "semantic_hash": "65516554557edb56de3b064b2aace78e"
+  },
+  "lib/sources/degalu-kaina-lt.ts": {
+    "mtime": 1792415317.6681635,
+    "seen": 1792940698.284281,
+    "ast_hash": "94b98f0d391aa8da5c8bd35432677fec",
+    "semantic_hash": "94b98f0d391aa8da5c8bd35432677fec"
+  },
+  "lib/sources/degalukaina-scraper.ts": {
+    "mtime": 1792943775.719466,
+    "seen": 1792943854.1604273,
+    "ast_hash": "abdb840592db27c6d29a6f390109088a",
+    "semantic_hash": ""
+  },
+  "lib/sources/degalukainos-api.ts": {
+    "mtime": 1792335952.448972,
+    "seen": 1792940698.284284,
+    "ast_hash": "3f661b6e7c625f833b8b391f4d569281",
+    "semantic_hash": "3f661b6e7c625f833b8b391f4d569281"
+  },
+  "lib/sources/fuel-prices-eu-national.ts": {
+    "mtime": 1792155817.2143939,
+    "seen": 1792940698.2842855,
+    "ast_hash": "087b2876eedd0f1d95af088f7a5ac2b8",
+    "semantic_hash": "087b2876eedd0f1d95af088f7a5ac2b8"
+  },
+  "lib/sources/fuel-prices-eu.ts": {
+    "mtime": 1792155801.5792453,
+    "seen": 1792940698.284287,
+    "ast_hash": "04076885903e6740f18dbf2dfe29603b",
+    "semantic_hash": "04076885903e6740f18dbf2dfe29603b"
+  },
+  "lib/sources/kurokainos24-scraper.ts": {
+    "mtime": 1792157476.9290938,
+    "seen": 1792940698.284289,
+    "ast_hash": "31b17531b017effba82c6743ba4883e5",
+    "semantic_hash": "31b17531b017effba82c6743ba4883e5"
+  },
+  "lib/sources/openvan.ts": {
+    "mtime": 1792155828.7692795,
+    "seen": 1792940698.2842903,
+    "ast_hash": "c4a8ca8953a2ab3be4de46ae4116a32e",
+    "semantic_hash": "c4a8ca8953a2ab3be4de46ae4116a32e"
+  },
+  "lib/sources/osm-overpass.ts": {
+    "mtime": 1792157962.2083468,
+    "seen": 1792940698.284292,
+    "ast_hash": "496d6a85f352d9d7a5a47cf953b579ee",
+    "semantic_hash": "496d6a85f352d9d7a5a47cf953b579ee"
+  },
+  "lib/sources/rapidapi.ts": {
+    "mtime": 1792155835.0137856,
+    "seen": 1792940698.2842934,
+    "ast_hash": "9ea5c4ba4b780079c171da040e6f3e21",
+    "semantic_hash": "9ea5c4ba4b780079c171da040e6f3e21"
+  },
+  "lib/sources/saurida-github.ts": {
+    "mtime": 1792157336.460055,
+    "seen": 1792940698.2842953,
+    "ast_hash": "e08dd373180036db5527dae8c19d641d",
+    "semantic_hash": "e08dd373180036db5527dae8c19d641d"
+  },
+  "lib/sources/saurida-official.ts": {
+    "mtime": 1792335586.6303804,
+    "seen": 1792940698.2842968,
+    "ast_hash": "d2d4cd8a5b5883280cf0ef1fc15733bf",
+    "semantic_hash": "d2d4cd8a5b5883280cf0ef1fc15733bf"
+  },
+  "lib/sources/station-directory.ts": {
+    "mtime": 1792157422.8975437,
+    "seen": 1792940698.2842982,
+    "ast_hash": "5dbe36c6f3ad824f9bcd98d8e7103e4f",
+    "semantic_hash": "5dbe36c6f3ad824f9bcd98d8e7103e4f"
+  },
+  "lib/types.ts": {
+    "mtime": 1792944204.6934986,
+    "seen": 1792944836.9421449,
+    "ast_hash": "e7fda16a36536ebd84a7d7044a2971ae",
+    "semantic_hash": ""
+  },
+  "lib/utils.ts": {
+    "mtime": 1792155740.898469,
+    "seen": 1792940698.2843013,
+    "ast_hash": "ff925ac518ff6a87ec901049549601be",
+    "semantic_hash": "ff925ac518ff6a87ec901049549601be"
+  },
+  "next.config.ts": {
+    "mtime": 1792155518.3265834,
+    "seen": 1792940698.2843025,
+    "ast_hash": "59ace8843cd0f04a4328b2189aead87b",
+    "semantic_hash": "59ace8843cd0f04a4328b2189aead87b"
+  },
+  "package.json": {
+    "mtime": 1792157879.5271313,
+    "seen": 1792940698.284304,
+    "ast_hash": "2fabf9776d94096f0495a249338222a4",
+    "semantic_hash": "2fabf9776d94096f0495a249338222a4"
+  },
+  "scratch-test.js": {
+    "mtime": 1792155926.2915866,
+    "seen": 1792940698.2843053,
+    "ast_hash": "9c8ab2cef590885a7719a427e1981e23",
+    "semantic_hash": "9c8ab2cef590885a7719a427e1981e23"
+  },
+  "tsconfig.json": {
+    "mtime": 1792155518.3276074,
+    "seen": 1792940698.284307,
+    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
+    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+  },
+  "vercel.json": {
+    "mtime": 1792155917.6986978,
+    "seen": 1792940698.2843082,
+    "ast_hash": "7f64c47ae7117c9a965cb40a46d5d475",
+    "semantic_hash": "7f64c47ae7117c9a965cb40a46d5d475"
+  },
+  "verify-agg.js": {
+    "mtime": 1792157448.8663568,
+    "seen": 1792940698.2843106,
+    "ast_hash": "25bcbc8c6ef344b55c4c575bd88b05e0",
+    "semantic_hash": "25bcbc8c6ef344b55c4c575bd88b05e0"
+  },
+  "app/naujienos/page.tsx": {
+    "mtime": 1792941989.7232697,
+    "seen": 1792942104.2019224,
+    "ast_hash": "140420d04bfb9d0c33b1d0b40f6e1f3c",
+    "semantic_hash": ""
+  },
+  "app/nuolaidos/page.tsx": {
+    "mtime": 1792941912.903935,
+    "seen": 1792942104.2019246,
+    "ast_hash": "2a37450060225c1bd7a34c5e44c3cac2",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1792155628.2920275,
+    "seen": 1792942104.2019958,
+    "ast_hash": "c98dbebb744eadc1acc4b9f58bfe0f42",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792155509.3005588,
+    "seen": 1792942104.2019973,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": ""
+  },
+  "public/file.svg": {
+    "mtime": 1792155509.4495463,
+    "seen": 1792942104.2019987,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": ""
+  },
+  "public/globe.svg": {
+    "mtime": 1792155509.458591,
+    "seen": 1792942104.2020001,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": ""
+  },
+  "public/next.svg": {
+    "mtime": 1792155509.4651031,
+    "seen": 1792942104.2020016,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": ""
+  },
+  "public/vercel.svg": {
+    "mtime": 1792155509.4716141,
+    "seen": 1792942104.202003,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": ""
+  },
+  "public/window.svg": {
+    "mtime": 1792155509.476614,
+    "seen": 1792942104.2020044,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": ""
+  },
+  "components/TripFuelPlannerModal.tsx": {
+    "mtime": 1792944493.364197,
+    "seen": 1792944836.9421132,
+    "ast_hash": "918659ab44369528ce20083d07137cb5",
+    "semantic_hash": ""
+  },
+  "lib/sources/ev-stations.ts": {
+    "mtime": 1792944332.8800035,
+    "seen": 1792944836.9421268,
+    "ast_hash": "a3d581cd5ebd98ecdc4e5a08d55f89f4",
+    "semantic_hash": ""
+  }
+}

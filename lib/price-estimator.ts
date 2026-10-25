@@ -52,7 +52,8 @@ const MARKET_BOUNDS: Record<FuelType, { min: number; max: number }> = {
   diesel: { min: 1.45, max: 2.75 },
   lpg: { min: 0.50, max: 1.35 },
   gasoline_98: { min: 1.55, max: 2.85 },
-  diesel_plus: { min: 1.55, max: 2.95 }
+  diesel_plus: { min: 1.55, max: 2.95 },
+  ev: { min: 0.15, max: 0.95 }
 };
 
 /**

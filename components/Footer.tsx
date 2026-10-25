@@ -70,7 +70,7 @@ export function Footer() {
 
         <div className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()} Degalai.lt — Visos teisės saugomos
+            © 2026 Degalai.lt — Visos teisės saugomos
           </p>
           <p className="text-[11px] text-slate-400">
             Duomenys pateikiami informaciniais tikslais. Tikslias kainas tikrinkite degalinėse.

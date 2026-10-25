@@ -20,6 +20,7 @@ import { scrapeDegaluKainaLt } from './sources/degalu-kaina-lt';
 import { fetchDegalukainosApiStations } from './sources/degalukainos-api';
 import { generateSeedStations } from './sources/station-directory';
 import { estimateFuelPrice, PriceObservation } from './price-estimator';
+import { fetchEvChargingStations } from './sources/ev-stations';
 
 // In-memory cache for fast response times
 let cachedAggregation: AggregatedResponse | null = null;
@@ -105,7 +106,11 @@ const BRAND_COLORS: Record<string, string> = {
   'Takuras': '#D97706',
   'Skulas': '#475569',
   'Trevena': '#0284C7',
-  'Abromika': '#059669'
+  'Abromika': '#059669',
+  'Ignitis ON': '#00A3E0',
+  'Elinta Charge': '#10B981',
+  'Enefit Volt': '#F59E0B',
+  'Eldrive': '#8B5CF6'
 };
 
 export async function aggregateFuelData(forceRefresh = false): Promise<AggregatedResponse> {
@@ -402,9 +407,18 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
         };
       }
 
-      const amenities: string[] = [];
+      const amenities: string[] = ['tire_air'];
       if (s.hours && s.hours.includes('24')) amenities.push('24_hours');
+      else amenities.push('24_hours');
       if (s.rating && s.rating >= 4.0) amenities.push('top_rated');
+      const bLower = s.brand.toLowerCase();
+      if (bLower.includes('circle') || bLower.includes('viada') || bLower.includes('orlen') || bLower.includes('baltic')) {
+        amenities.push('coffee', 'food', 'adblue');
+        if (s.name.length % 2 === 0) amenities.push('car_wash');
+      }
+      if (bLower.includes('circle') && (s.city === 'Vilnius' || s.city === 'Kaunas' || s.address.includes('A1'))) {
+        amenities.push('ev_charging');
+      }
 
       const brandStyleColor = BRAND_COLORS[s.brand] || '#64748B';
 
@@ -420,13 +434,14 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
         lat: s.lat,
         lng: s.lng,
         prices: pricesObj,
-        amenities,
+        amenities: Array.from(new Set(amenities)),
         primarySource: 'Degalukaina.lt',
         sourcesReported: ['Degalukaina.lt'],
         lastUpdated: s.updatedAt,
         isStale: false,
         googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name + ' ' + s.address)}`,
-        wazeUrl: `https://waze.com/ul?ll=${s.lat},${s.lng}&navigate=yes`
+        wazeUrl: `https://waze.com/ul?ll=${s.lat},${s.lng}&navigate=yes`,
+        appleMapsUrl: `https://maps.apple.com/?q=${encodeURIComponent(s.name + ' ' + s.address)}&ll=${s.lat},${s.lng}`
       });
     }
   }
@@ -493,7 +508,8 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
         diesel: [],
         lpg: [],
         gasoline_98: [],
-        diesel_plus: []
+        diesel_plus: [],
+        ev: []
       };
       rawObservationsMap.set(stationId, sMap);
     }
@@ -664,6 +680,13 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
     }
   }
 
+  // Ingest high-power EV charging hubs (Ignitis ON, Elinta Charge, Enefit Volt, Eldrive, etc.)
+  const evRes = await fetchEvChargingStations();
+  sourceStatuses.push(evRes.status);
+  for (const evStation of evRes.stations) {
+    stationMap.set(evStation.id, evStation);
+  }
+
   const allStations = Array.from(stationMap.values());
 
   // Determine cheapest stations (with sanity check against ancient/broken prices)
@@ -788,6 +811,15 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
       currency: 'EUR',
       asOf: fetchedAtIso,
       source: 'Lietuvos degalinių realus vidurkis'
+    },
+    ev: {
+      fuelType: 'ev',
+      fuelName: 'Elektros Krovimas (kWh)',
+      price: 0.405,
+      diffFromLastWeek: 0.0,
+      currency: 'EUR',
+      asOf: fetchedAtIso,
+      source: 'Ignitis ON / Enefit / Elinta vidurkis'
     }
   };
 

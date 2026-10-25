@@ -13,7 +13,10 @@ import {
   ShoppingBag,
   Car,
   Zap,
-  Info
+  Info,
+  Star,
+  Wind,
+  Droplets
 } from 'lucide-react';
 import { formatPrice, formatPriceDiff, formatRelativeTimeLt, getBrandStyle } from '@/lib/utils';
 
@@ -22,13 +25,17 @@ interface StationListProps {
   selectedFuel: FuelType;
   nationalAvgPrice: number;
   onSelectStation: (stationId: string) => void;
+  favorites?: Set<string>;
+  onToggleFavorite?: (stationId: string, e: React.MouseEvent) => void;
 }
 
 export function StationList({
   stations,
   selectedFuel,
   nationalAvgPrice,
-  onSelectStation
+  onSelectStation,
+  favorites = new Set(),
+  onToggleFavorite
 }: StationListProps) {
   if (stations.length === 0) {
     return (
@@ -40,7 +47,7 @@ export function StationList({
           Nerasta degalinių pagal pasirinktus filtrus
         </h3>
         <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mt-1">
-          Bandykite pakeisti paieškos frazę, pasirinkti kitą tinklą ar išplėsti paieškos spindulį.
+          Bandykite pakeisti paieškos frazę, pasirinkti kitą tinklą, išvalyti paslaugų filtrus ar išplėsti spindulį.
         </p>
       </div>
     );
@@ -55,6 +62,7 @@ export function StationList({
         const diff = price ? price - nationalAvgPrice : undefined;
         const diffFormatted = formatPriceDiff(diff);
         const isCheapestInSelection = fuelEntry?.isLowest;
+        const isFav = favorites.has(station.id);
 
         return (
           <div
@@ -66,7 +74,7 @@ export function StationList({
                 : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
             }`}
           >
-            {/* Top Bar: Brand, Lowest Tag, Distance */}
+            {/* Top Bar: Brand, Lowest Tag, Distance, Favorite Star */}
             <div>
               <div className="flex items-center justify-between gap-2 mb-2.5">
                 <div className="flex items-center gap-2">
@@ -82,14 +90,38 @@ export function StationList({
                       Geriausia kaina
                     </span>
                   )}
+
+                  {station.evPowerKw && (
+                    <span className="flex items-center gap-0.5 text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                      <Zap className="w-3 h-3 text-amber-500" />
+                      {station.evPowerKw} kW
+                    </span>
+                  )}
                 </div>
 
-                {station.distanceKm !== undefined && (
-                  <span className="flex items-center gap-1 text-xs font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-md">
-                    <Navigation className="w-3 h-3 text-emerald-500" />
-                    {station.distanceKm} km
-                  </span>
-                )}
+                <div className="flex items-center gap-2">
+                  {station.distanceKm !== undefined && (
+                    <span className="flex items-center gap-1 text-xs font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-md">
+                      <Navigation className="w-3 h-3 text-emerald-500" />
+                      {station.distanceKm} km
+                    </span>
+                  )}
+
+                  {/* Favorite Star Button (Idea 3) */}
+                  {onToggleFavorite && (
+                    <button
+                      onClick={(e) => onToggleFavorite(station.id, e)}
+                      className={`p-1.5 rounded-lg transition-colors ${
+                        isFav
+                          ? 'text-amber-500 hover:bg-amber-500/10'
+                          : 'text-slate-300 hover:text-amber-500 hover:bg-slate-100 dark:hover:bg-slate-800'
+                      }`}
+                      title={isFav ? 'Pašalinti iš mėgstamiausių' : 'Pridėti prie mėgstamiausių'}
+                    >
+                      <Star className={`w-4 h-4 ${isFav ? 'fill-amber-500 text-amber-500' : ''}`} />
+                    </button>
+                  )}
+                </div>
               </div>
 
               {/* Station Name & Address */}
@@ -101,6 +133,18 @@ export function StationList({
                 <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                 <span className="truncate">{station.address}, {station.city}</span>
               </div>
+
+              {/* Amenities Badges Row (Idea 6) */}
+              {station.amenities && station.amenities.length > 0 && (
+                <div className="flex items-center gap-1 mt-2 text-slate-400 text-xs">
+                  {station.amenities.includes('car_wash') && <span title="Plovykla"><Car className="w-3 h-3 hover:text-slate-600" /></span>}
+                  {station.amenities.includes('coffee') && <span title="Kava & Maistas"><Coffee className="w-3 h-3 hover:text-slate-600" /></span>}
+                  {station.amenities.includes('tire_air') && <span title="Padangų slėgis"><Wind className="w-3 h-3 hover:text-slate-600" /></span>}
+                  {station.amenities.includes('adblue') && <span title="AdBlue"><Droplets className="w-3 h-3 hover:text-slate-600" /></span>}
+                  {station.amenities.includes('ev_charging') && <span title="EV Krovimas"><Zap className="w-3 h-3 hover:text-amber-500 text-amber-500" /></span>}
+                  {station.amenities.includes('24_hours') && <span className="text-[10px] font-bold text-slate-400 px-1 rounded bg-slate-100 dark:bg-slate-800">24/7</span>}
+                </div>
+              )}
             </div>
 
             {/* Price section */}
@@ -108,13 +152,15 @@ export function StationList({
               <div className="flex items-end justify-between">
                 <div>
                   <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                    Kaina už litrą
+                    {selectedFuel === 'ev' ? 'Kaina už kWh' : 'Kaina už litrą'}
                   </div>
                   <div className="flex items-baseline gap-1.5 mt-0.5">
                     <span className="text-2xl font-black tracking-tight text-slate-900 dark:text-white font-mono">
                       {price ? price.toFixed(3) : '—'}
                     </span>
-                    <span className="text-xs font-semibold text-slate-500">€/L</span>
+                    <span className="text-xs font-semibold text-slate-500">
+                      {selectedFuel === 'ev' ? '€/kWh' : '€/L'}
+                    </span>
                   </div>
                 </div>
 
@@ -161,6 +207,9 @@ export function StationList({
                 )}
                 {station.prices.lpg && selectedFuel !== 'lpg' && (
                   <span>LPG: <strong className="text-slate-700 dark:text-slate-300 font-mono">{station.prices.lpg.price.toFixed(3)}</strong></span>
+                )}
+                {station.prices.ev && selectedFuel !== 'ev' && (
+                  <span>EV: <strong className="text-slate-700 dark:text-slate-300 font-mono">{station.prices.ev.price.toFixed(3)}</strong></span>
                 )}
               </div>
 

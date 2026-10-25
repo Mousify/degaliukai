@@ -1,4 +1,4 @@
-export type FuelType = 'gasoline_95' | 'diesel' | 'lpg' | 'gasoline_98' | 'diesel_plus';
+export type FuelType = 'gasoline_95' | 'diesel' | 'lpg' | 'gasoline_98' | 'diesel_plus' | 'ev';
 
 export interface RawFuelPrice {
   stationId: string;
@@ -39,6 +39,16 @@ export interface StationAmenity {
   icon: string;
 }
 
+export interface CommunityPriceReport {
+  id: string;
+  stationId: string;
+  fuelType: FuelType;
+  price: number;
+  timestamp: string;
+  reporterName?: string;
+  note?: string;
+}
+
 export interface Station {
   id: string;
   slug: string;
@@ -59,6 +69,9 @@ export interface Station {
   isStale: boolean; // >24h old
   googleMapsUrl: string;
   wazeUrl: string;
+  appleMapsUrl?: string;
+  evPowerKw?: number;
+  isEvOnly?: boolean;
 }
 
 export interface SourceStatus {

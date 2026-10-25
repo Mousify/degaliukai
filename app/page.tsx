@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { AggregatedResponse, FuelType, Station, TrendPoint } from '@/lib/types';
 import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 import { HeroStats } from '@/components/HeroStats';
 import { FuelFilterBar } from '@/components/FuelFilterBar';
 import { StationList } from '@/components/StationList';
@@ -10,6 +11,7 @@ import { StationTable } from '@/components/StationTable';
 import { MapWrapper } from '@/components/MapWrapper';
 import { StationDetailModal } from '@/components/StationDetailModal';
 import { NationalTrendChart } from '@/components/NationalTrendChart';
+import { TripFuelPlannerModal } from '@/components/TripFuelPlannerModal';
 import { calculateDistance, formatRelativeTimeLt } from '@/lib/utils';
 import {
   Fuel,
@@ -23,7 +25,8 @@ import {
   Info,
   Loader2,
   RefreshCw,
-  Zap
+  Zap,
+  Route
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -42,6 +45,19 @@ export default function HomePage() {
   const [sortBy, setSortBy] = useState('price_asc');
   const [viewMode, setViewMode] = useState<'cards' | 'map' | 'table'>('cards');
 
+  // Idea 6: Amenities Filter
+  const [selectedAmenity, setSelectedAmenity] = useState<string>('all');
+
+  // Idea 9: Only with Prices Toggle
+  const [onlyWithPrices, setOnlyWithPrices] = useState<boolean>(false);
+
+  // Idea 3: Favorites / Watchlist
+  const [favorites, setFavorites] = useState<Set<string>>(new Set());
+  const [favoritesOnly, setFavoritesOnly] = useState<boolean>(false);
+
+  // Idea 1: Trip Fuel Planner Modal
+  const [isTripPlannerOpen, setIsTripPlannerOpen] = useState<boolean>(false);
+
   // Geolocation
   const [isLocating, setIsLocating] = useState(false);
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(null);
@@ -49,6 +65,33 @@ export default function HomePage() {
 
   // Detail Modal
   const [selectedStationId, setSelectedStationId] = useState<string | null>(null);
+
+  // Load Favorites from localStorage on mount
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('degalai_favorites');
+      if (stored) {
+        setFavorites(new Set(JSON.parse(stored)));
+      }
+    } catch (e) {
+      console.warn('Could not load favorites from localStorage:', e);
+    }
+  }, []);
+
+  const toggleFavorite = (stationId: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setFavorites(prev => {
+      const next = new Set(prev);
+      if (next.has(stationId)) next.delete(stationId);
+      else next.add(stationId);
+      try {
+        localStorage.setItem('degalai_favorites', JSON.stringify(Array.from(next)));
+      } catch (err) {
+        console.warn('LocalStorage error:', err);
+      }
+      return next;
+    });
+  };
 
   // Fetch prices data
   const fetchData = async (forceRefresh = false) => {
@@ -125,13 +168,43 @@ export default function HomePage() {
     );
   };
 
+  // Handle Community Price Update (Idea 2)
+  const handleCommunityPriceUpdate = (stationId: string, fuelType: FuelType, price: number) => {
+    setData(prev => {
+      if (!prev) return prev;
+      const nowIso = new Date().toISOString();
+      const updatedStations = prev.stations.map(s => {
+        if (s.id !== stationId) return s;
+        return {
+          ...s,
+          prices: {
+            ...s.prices,
+            [fuelType]: {
+              price,
+              currency: 'EUR',
+              source: 'Degalai.lt Bendruomenė (Waze)',
+              updatedAt: nowIso,
+              confidenceScore: 99,
+              calculationMethod: 'freshest_verified' as const
+            }
+          },
+          lastUpdated: nowIso
+        };
+      });
+      return { ...prev, stations: updatedStations };
+    });
+  };
+
   // Extract unique cities and brands for filter dropdowns
   const { availableCities, availableBrands } = useMemo(() => {
     if (!data?.stations) return { availableCities: [], availableBrands: [] };
     const cities = new Set<string>();
     const brands = new Set<string>();
+    const wantsEv = selectedFuel === 'ev' || selectedAmenity === 'ev_charging';
 
     data.stations.forEach((s) => {
+      if (!wantsEv && s.isEvOnly) return;
+      if (wantsEv && !s.isEvOnly && !s.amenities?.includes('ev_charging')) return;
       if (s.city) cities.add(s.city);
       if (s.brand) brands.add(s.brand);
     });
@@ -140,7 +213,7 @@ export default function HomePage() {
       availableCities: Array.from(cities).sort(),
       availableBrands: Array.from(brands).sort()
     };
-  }, [data?.stations]);
+  }, [data?.stations, selectedFuel, selectedAmenity]);
 
   // Client-side filtering & sorting of stations
   const filteredStations = useMemo(() => {
@@ -156,6 +229,14 @@ export default function HomePage() {
         distanceKm
       };
     });
+
+    // 0. EV Stations Visibility: Hide EV-only stations UNLESS user explicitly chooses EV fuel or EV amenity
+    const wantsEv = selectedFuel === 'ev' || selectedAmenity === 'ev_charging';
+    if (!wantsEv) {
+      list = list.filter((s) => !s.isEvOnly);
+    } else if (selectedFuel === 'ev') {
+      list = list.filter((s) => s.isEvOnly || s.prices.ev || s.evPowerKw || s.amenities?.includes('ev_charging'));
+    }
 
     // 1. Search Query
     if (searchQuery.trim()) {
@@ -184,7 +265,22 @@ export default function HomePage() {
       list = list.filter((s) => s.distanceKm !== undefined && s.distanceKm <= radiusKm);
     }
 
-    // 5. Sorting
+    // 5. Amenities Filter (Idea 6)
+    if (selectedAmenity && selectedAmenity !== 'all') {
+      list = list.filter((s) => s.amenities && s.amenities.includes(selectedAmenity));
+    }
+
+    // 6. Only With Prices (Idea 9)
+    if (onlyWithPrices) {
+      list = list.filter((s) => s.prices[selectedFuel]?.price !== undefined && s.prices[selectedFuel]!.price > 0);
+    }
+
+    // 7. Favorites / Watchlist Only (Idea 3)
+    if (favoritesOnly) {
+      list = list.filter((s) => favorites.has(s.id));
+    }
+
+    // 8. Sorting
     list.sort((a, b) => {
       const priceA = a.prices[selectedFuel]?.price ?? 999;
       const priceB = b.prices[selectedFuel]?.price ?? 999;
@@ -214,7 +310,11 @@ export default function HomePage() {
     selectedCity,
     sortBy,
     userCoords,
-    radiusKm
+    radiusKm,
+    selectedAmenity,
+    onlyWithPrices,
+    favoritesOnly,
+    favorites
   ]);
 
   const nationalAvg = data?.nationalAverages[selectedFuel]?.price || 1.545;
@@ -238,21 +338,34 @@ export default function HomePage() {
           <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-1/3 -mb-12 w-64 h-64 bg-teal-500/10 rounded-full blur-2xl pointer-events-none" />
 
-          <div className="relative z-10 max-w-2xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold tracking-wide">
-              <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Multi-šaltinių kainų agregatorius</span>
-              <span className="w-1 h-1 rounded-full bg-emerald-400" />
-              <span>Lietuva</span>
+          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+            <div className="max-w-2xl space-y-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold tracking-wide">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Multi-šaltinių kainų agregatorius</span>
+                <span className="w-1 h-1 rounded-full bg-emerald-400" />
+                <span>Lietuva ({data?.stations?.length || 880}+ stočių)</span>
+              </div>
+
+              <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white leading-tight">
+                Sutaupykite kiekvieną kartą pildamiesi degalus.
+              </h1>
+
+              <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
+                Palyginkite realias <strong>95 benzino</strong>, <strong>dyzelino</strong>, <strong>LPG</strong> ir <strong>EV krovimo</strong> kainas visose šalies degalinėse realiu laiku.
+              </p>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white leading-tight">
-              Sutaupykite kiekvieną kartą pildamiesi degalus.
-            </h1>
-
-            <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
-              Palyginkite realias <strong>95 benzino</strong>, <strong>dyzelino</strong> ir <strong>LPG</strong> kainas visose šalies degalinėse. Tikrinkite duomenų šviežumą ir raskite pigiausią stotelę pakeliui.
-            </p>
+            {/* Quick Trip Planner CTA */}
+            <div className="shrink-0 w-full sm:w-auto">
+              <button
+                onClick={() => setIsTripPlannerOpen(true)}
+                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-black text-sm shadow-xl shadow-emerald-500/20 transition-all hover:scale-102"
+              >
+                <Route className="w-5 h-5" />
+                <span>Kuro Maršruto Planuotojas</span>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -265,7 +378,7 @@ export default function HomePage() {
           />
         )}
 
-        {/* Main Navigation Tabs: Degalinių Kainos vs Nacionalinė Dinamika */}
+        {/* Main Navigation Tabs */}
         <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
           <div className="flex items-center gap-2">
             <button
@@ -305,7 +418,7 @@ export default function HomePage() {
         {/* TAB 1: Stations view */}
         {activeViewTab === 'stations' && (
           <div className="space-y-5">
-            {/* Filter bar */}
+            {/* Filter bar with all new features */}
             <FuelFilterBar
               selectedFuel={selectedFuel}
               onFuelChange={setSelectedFuel}
@@ -326,6 +439,14 @@ export default function HomePage() {
               onRadiusChange={setRadiusKm}
               availableCities={availableCities}
               availableBrands={availableBrands}
+              onOpenTripPlanner={() => setIsTripPlannerOpen(true)}
+              favoritesOnly={favoritesOnly}
+              onFavoritesOnlyChange={setFavoritesOnly}
+              favoritesCount={favorites.size}
+              selectedAmenity={selectedAmenity}
+              onAmenityChange={setSelectedAmenity}
+              onlyWithPrices={onlyWithPrices}
+              onOnlyWithPricesChange={setOnlyWithPrices}
             />
 
             {/* Content by ViewMode */}
@@ -342,6 +463,8 @@ export default function HomePage() {
                 selectedFuel={selectedFuel}
                 userCoords={userCoords}
                 onSelectStation={(id) => setSelectedStationId(id)}
+                onLocateUser={handleLocateUser}
+                isLocating={isLocating}
               />
             ) : viewMode === 'table' ? (
               <StationTable
@@ -356,6 +479,8 @@ export default function HomePage() {
                 selectedFuel={selectedFuel}
                 nationalAvgPrice={nationalAvg}
                 onSelectStation={(id) => setSelectedStationId(id)}
+                favorites={favorites}
+                onToggleFavorite={toggleFavorite}
               />
             )}
           </div>
@@ -372,28 +497,28 @@ export default function HomePage() {
         )}
       </main>
 
-      {/* Station Detail Modal */}
+      {/* Station Detail Modal with Community Price Reporting & Favorites */}
       <StationDetailModal
         stationId={selectedStationId}
         onClose={() => setSelectedStationId(null)}
         nationalAverages={data?.nationalAverages || ({} as any)}
+        isFavorite={selectedStationId ? favorites.has(selectedStationId) : false}
+        onToggleFavorite={toggleFavorite}
+        onCommunityPriceUpdate={handleCommunityPriceUpdate}
       />
 
-      {/* Footer */}
-      <footer className="mt-16 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-8 text-xs text-slate-500 dark:text-slate-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Fuel className="w-4 h-4 text-emerald-500" />
-            <span className="font-bold text-slate-900 dark:text-white">Degalai.lt</span>
-            <span>—</span>
-            <span>Atviras Lietuvos degalų kainų stebėjimo portalas</span>
-          </div>
+      {/* Idea 1: Trip Fuel Planner Modal */}
+      {data?.stations && (
+        <TripFuelPlannerModal
+          isOpen={isTripPlannerOpen}
+          onClose={() => setIsTripPlannerOpen(false)}
+          stations={data.stations}
+          onSelectStation={(id) => setSelectedStationId(id)}
+        />
+      )}
 
-          <div className="flex flex-wrap items-center gap-4 text-slate-400">
-            <span>Šaltiniai: fuel-prices.eu • European Commission Oil Bulletin • OpenVan.camp • Saurida Open Data</span>
-          </div>
-        </div>
-      </footer>
+      {/* Upgraded Footer */}
+      <Footer />
     </div>
   );
 }
