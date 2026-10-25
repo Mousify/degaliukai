@@ -39,7 +39,7 @@ export function SourceStatusModal({
                 Duomenų Šaltinių Būsena
               </h2>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Agreguojame 5 nepriklausomus šaltinius realiu laiku
+                Agreguojame {totalSourcesCount} nepriklausomus šaltinius realiu laiku
               </p>
             </div>
           </div>
@@ -69,7 +69,13 @@ export function SourceStatusModal({
           </div>
 
           <div className="space-y-3">
-            {statuses.map((s) => {
+            {statuses.length === 0 ? (
+              <div className="p-8 text-center text-slate-400 bg-slate-50 dark:bg-slate-950/30 rounded-xl border border-slate-200 dark:border-slate-800">
+                <Clock className="w-6 h-6 mx-auto mb-2 text-slate-400 animate-spin" />
+                <p className="text-sm font-semibold">Kraunama šaltinių informacija...</p>
+              </div>
+            ) : (
+              statuses.map((s) => {
               const isOnline = s.status === 'online';
               const isDegraded = s.status === 'degraded';
               const isDisabled = s.status === 'disabled';
@@ -136,7 +142,7 @@ export function SourceStatusModal({
                   </div>
                 </div>
               );
-            })}
+            }))}
           </div>
 
           <div className="p-3.5 rounded-xl bg-blue-500/5 dark:bg-blue-500/10 border border-blue-500/20 text-xs text-slate-600 dark:text-slate-300">

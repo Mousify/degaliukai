@@ -1,4 +1,5 @@
 import { Station, SourceStatus } from '../types';
+import { fetchWithRetry } from '../utils';
 
 export interface EvStationsResult {
   stations: Station[];
@@ -43,31 +44,28 @@ export async function fetchEvChargingStations(): Promise<EvStationsResult> {
   }
 
   const stationsMap = new Map<string, Station>();
-  const totalPages = 34;
+  const totalPages = 6;
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
-  const concurrency = 8;
 
   try {
-    for (let i = 0; i < pages.length; i += concurrency) {
-      const pageBatch = pages.slice(i, i + concurrency);
-      await Promise.all(
-        pageBatch.map(async (p) => {
-          try {
-            const url =
-              p === 1
-                ? 'https://degalukaina.lt/ikrovimo-stoteles#lentele'
-                : `https://degalukaina.lt/ikrovimo-stoteles?psl=${p}#lentele`;
+    await Promise.all(
+      pages.map(async (p) => {
+        try {
+          const url =
+            p === 1
+              ? 'https://degalukaina.lt/ikrovimo-stoteles#lentele'
+              : `https://degalukaina.lt/ikrovimo-stoteles?psl=${p}#lentele`;
 
-            const res = await fetch(url, {
-              headers: {
-                'User-Agent':
-                  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
-              },
-              next: { revalidate: 1800 }
-            });
+          const res = await fetchWithRetry(url, {
+            headers: {
+              'User-Agent':
+                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+            },
+            next: { revalidate: 1800 }
+          }, 1, 200, 4000);
 
-            if (!res.ok) return;
-            const html = await res.text();
+          if (!res.ok) return;
+          const html = await res.text();
             const rowRegex = /<tr>([\s\S]*?)<\/tr>/gi;
             let match: RegExpExecArray | null;
 
@@ -139,8 +137,7 @@ export async function fetchEvChargingStations(): Promise<EvStationsResult> {
           }
         })
       );
-    }
-  } catch (err) {
+    } catch (err) {
     console.error('[EV Scraper] Global fetch error:', err);
   }
 
@@ -153,7 +150,7 @@ export async function fetchEvChargingStations(): Promise<EvStationsResult> {
   const status: SourceStatus = {
     id: 'ev-charging-lithuania',
     name: 'Lietuvos EV Krovimo Tinklai',
-    description: `Nacionalinis ${stations.length} elektromobilių stotelių registras (visos 34 puslapių stotelės)`,
+    description: `Nacionalinis ${stations.length} elektromobilių stotelių registras`,
     type: 'live_station',
     status: 'online',
     stationsCount: stations.length,

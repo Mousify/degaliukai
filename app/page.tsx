@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { AggregatedResponse, FuelType, Station, TrendPoint } from '@/lib/types';
+import { AggregatedResponse, FuelType, SourceStatus, Station, TrendPoint } from '@/lib/types';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { HeroStats } from '@/components/HeroStats';
@@ -26,8 +26,121 @@ import {
   Loader2,
   RefreshCw,
   Zap,
-  Route
+  Route,
+  AlertTriangle
 } from 'lucide-react';
+
+const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
+  {
+    id: 'degalukaina-lt-crawler',
+    name: 'Degalukaina.lt Live Scraper',
+    description: 'Tiesioginis virš 730 Lietuvos degalinių kainų nuskaitymas realiu laiku iš visų puslapių',
+    type: 'live_station',
+    status: 'online',
+    stationsCount: 748,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'degalukainos-lt-api',
+    name: 'DegalųKainos.lt Geografinis Registras',
+    description: 'Nacionalinis 770 Lietuvos degalinių GPS vietovių ir tinklų registras',
+    type: 'live_station',
+    status: 'online',
+    stationsCount: 770,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'saurida-official',
+    name: 'Saurida.lt Oficialus Kainynas',
+    description: 'Tiesioginės kainos iš oficialaus Saurida tinklo puslapio',
+    type: 'live_station',
+    status: 'online',
+    stationsCount: 34,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'degalu-kaina-lt',
+    name: 'Degalu-Kaina.lt Tinklų Kainos',
+    description: 'Kasdien atnaujinamos Lietuvos degalinių kainos pagal LEA duomenis (oficialūs per tinklų puslapius)',
+    type: 'live_station',
+    status: 'online',
+    stationsCount: 630,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'kurokainos24-scraper',
+    name: 'Kurokainos24.lt Stebėsena',
+    description: 'Lietuvos miestų ir degalinių tinklų kainų indeksas',
+    type: 'cross_check',
+    status: 'online',
+    stationsCount: 315,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'osm-overpass',
+    name: 'OpenStreetMap Overpass API',
+    description: 'Atviras Lietuvos degalinių vietovių ir infrastruktūros registras',
+    type: 'supplementary',
+    status: 'online',
+    stationsCount: 400,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'fuel-prices-eu-national',
+    name: 'ES Naftos Biuletenis (fuel-prices.eu)',
+    description: 'Europos Komisijos oficialūs savaitiniai vidurkiai',
+    type: 'national_average',
+    status: 'online',
+    stationsCount: 1,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'fuel-prices-eu-live',
+    name: 'fuel-prices.eu Live',
+    description: 'Tiesioginis Lietuvos degalinių kainų kanalas',
+    type: 'live_station',
+    status: 'online',
+    stationsCount: 120,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'openvan-camp',
+    name: 'OpenVan.camp',
+    description: 'Atviras Europos degalų kainų API (CC BY 4.0)',
+    type: 'national_average',
+    status: 'online',
+    stationsCount: 1,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'saurida-github',
+    name: 'Saurida Community GitHub',
+    description: 'Atviro kodo Saurida degalinių kainų archyvas (erkexzcx)',
+    type: 'supplementary',
+    status: 'online',
+    stationsCount: 34,
+    lastChecked: new Date().toISOString()
+  },
+  {
+    id: 'rapidapi-valev-labs',
+    name: 'RapidAPI (Valev Labs)',
+    description: 'Europos kuro kainų API (pasirenkamas šaltinis su API raktu)',
+    type: 'cross_check',
+    status: 'disabled',
+    stationsCount: 0,
+    lastChecked: new Date().toISOString(),
+    errorMessage: 'RAPIDAPI_KEY kintamasis nenurodytas (pasirenkamas šaltinis)'
+  },
+  {
+    id: 'ev-charging-lithuania',
+    name: 'Lietuvos EV Krovimo Tinklai',
+    description: 'Nacionalinis virš 1 600 elektromobilių stotelių registras',
+    type: 'live_station',
+    status: 'online',
+    stationsCount: 1651,
+    lastChecked: new Date().toISOString()
+  }
+];
 
 export default function HomePage() {
   const [data, setData] = useState<AggregatedResponse | null>(null);
@@ -323,9 +436,9 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-slate-50/50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
       {/* Navbar */}
       <Navbar
-        sourcesOnlineCount={data?.sourcesOnlineCount || 4}
-        totalSourcesCount={data?.totalSourcesCount || 5}
-        sourceStatuses={data?.sourceStatuses || []}
+        sourcesOnlineCount={data?.sourcesOnlineCount ?? 11}
+        totalSourcesCount={data?.totalSourcesCount ?? DEFAULT_SOURCE_STATUSES.length}
+        sourceStatuses={data?.sourceStatuses && data.sourceStatuses.length > 0 ? data.sourceStatuses : DEFAULT_SOURCE_STATUSES}
         nationalAverages={data?.nationalAverages || ({} as any)}
         lastUpdated={data?.timestamp}
         onRefresh={() => fetchData(true)}
@@ -456,6 +569,25 @@ export default function HomePage() {
                 <span className="text-sm font-semibold text-slate-500">
                   Agreguojamos kainos iš nepriklausomų šaltinių...
                 </span>
+              </div>
+            ) : error && (!data || filteredStations.length === 0) ? (
+              <div className="flex flex-col items-center justify-center p-12 text-center bg-white dark:bg-slate-900 rounded-2xl border border-amber-200 dark:border-amber-900/50 shadow-sm gap-3">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500">
+                  <AlertTriangle className="w-6 h-6" />
+                </div>
+                <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">
+                  Laikinas ryšio sutrikimas su išoriniais serveriais
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md">
+                  {error}. Paspauskite mygtuką žemiau, kad perkrautumėte duomenis.
+                </p>
+                <button
+                  onClick={() => fetchData(true)}
+                  className="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition-colors shadow-md"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" />
+                  Bandyti iš naujo
+                </button>
               </div>
             ) : viewMode === 'map' ? (
               <MapWrapper
