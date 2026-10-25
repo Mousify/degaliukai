@@ -136,7 +136,8 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
     feed2Res,
     sauridaOfficialRes,
     degaluKainaLtRes,
-    degalukainosApiRes
+    degalukainosApiRes,
+    evRes
   ] = await Promise.all([
     scrapeDegalukaina().catch((err) => {
       console.error('[Source: Degalukaina.lt Live] Failed:', err);
@@ -342,6 +343,22 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
           errorMessage: String(err)
         }
       };
+    }),
+    fetchEvChargingStations().catch((err) => {
+      console.error('[Source: EV Stations] Failed:', err);
+      return {
+        stations: [],
+        status: {
+          id: 'ev-charging-lithuania',
+          name: 'Lietuvos EV Krovimo Tinklai',
+          description: 'Nacionalinis elektromobilių stotelių registras',
+          type: 'live_station' as const,
+          status: 'degraded' as const,
+          stationsCount: 0,
+          lastChecked: fetchedAtIso,
+          errorMessage: String(err)
+        }
+      };
     })
   ]);
 
@@ -356,7 +373,8 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
     fuelPricesEuRes.status,
     openVanRes.status,
     sauridaRes.status,
-    rapidApiRes.status
+    rapidApiRes.status,
+    evRes.status
   );
 
   if (process.env.FUEL_SOURCE_URL) sourceStatuses.push(feed1Res.status);
@@ -681,10 +699,10 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
   }
 
   // Ingest high-power EV charging hubs (Ignitis ON, Elinta Charge, Enefit Volt, Eldrive, etc.)
-  const evRes = await fetchEvChargingStations();
-  sourceStatuses.push(evRes.status);
-  for (const evStation of evRes.stations) {
-    stationMap.set(evStation.id, evStation);
+  if (evRes.stations && evRes.stations.length > 0) {
+    for (const evStation of evRes.stations) {
+      stationMap.set(evStation.id, evStation);
+    }
   }
 
   const allStations = Array.from(stationMap.values());

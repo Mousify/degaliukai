@@ -130,23 +130,37 @@ export function getBrandStyle(brand: string): { bg: string; text: string; border
 }
 
 /**
- * Exponential backoff fetcher
+ * Exponential backoff fetcher with automatic per-request timeout protection
  */
 export async function fetchWithRetry(
   url: string,
   options: RequestInit = {},
-  retries = 2,
-  backoffMs = 500
+  retries = 1,
+  backoffMs = 300,
+  timeoutMs = 6000
 ): Promise<Response> {
   let attempt = 0;
   while (true) {
+    let timer: NodeJS.Timeout | null = null;
     try {
-      const response = await fetch(url, options);
+      const controller = new AbortController();
+      timer = setTimeout(() => {
+        controller.abort(new Error(`Timeout after ${timeoutMs}ms for ${url}`));
+      }, timeoutMs);
+
+      if (options.signal) {
+        options.signal.addEventListener('abort', () => controller.abort());
+      }
+
+      const response = await fetch(url, { ...options, signal: controller.signal });
+      if (timer) clearTimeout(timer);
+
       if (!response.ok && attempt < retries && (response.status >= 500 || response.status === 429)) {
         throw new Error(`HTTP ${response.status}`);
       }
       return response;
     } catch (err) {
+      if (timer) clearTimeout(timer);
       if (attempt >= retries) {
         throw err;
       }
