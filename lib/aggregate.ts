@@ -11,8 +11,8 @@ import { scrapeKurokainos24 } from './sources/kurokainos24-scraper';
 import { fetchFuelPricesEu } from './sources/fuel-prices-eu';
 import { fetchFuelPricesEuNational } from './sources/fuel-prices-eu-national';
 import { fetchOpenVanPrices } from './sources/openvan';
-import { fetchRapidApiFuelPrices } from './sources/rapidapi';
-import { fetchSauridaGithubPrices } from './sources/saurida-github';
+
+
 import { fetchOsmOverpassStations } from './sources/osm-overpass';
 import { fetchCustomFeed } from './sources/custom-feeds';
 import { scrapeSauridaOfficial } from './sources/saurida-official';
@@ -129,8 +129,8 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
     fuelPricesEuNationalRes,
     fuelPricesEuRes,
     openVanRes,
-    sauridaRes,
-    rapidApiRes,
+
+
     osmOverpassRes,
     feed1Res,
     feed2Res,
@@ -372,8 +372,6 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
     fuelPricesEuNationalRes.status,
     fuelPricesEuRes.status,
     openVanRes.status,
-    sauridaRes.status,
-    rapidApiRes.status,
     evRes.status
   );
 
@@ -630,7 +628,6 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
   for (const p of sauridaOfficialRes.prices) addRawPriceObservation(p);
   for (const p of degaluKainaLtRes.prices) addRawPriceObservation(p);
   for (const p of fuelPricesEuRes.prices) addRawPriceObservation(p);
-  for (const p of sauridaRes.prices) addRawPriceObservation(p);
   for (const p of feed1Res.prices) addRawPriceObservation(p);
   for (const p of feed2Res.prices) addRawPriceObservation(p);
 

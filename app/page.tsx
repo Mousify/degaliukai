@@ -27,8 +27,12 @@ import {
   RefreshCw,
   Zap,
   Route,
-  AlertTriangle
+  AlertTriangle,
+  ArrowDownCircle,
+  Search
 } from 'lucide-react';
+
+const STATIC_CHECK_TIME = '2026-11-01T20:00:00.000Z';
 
 const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
   {
@@ -38,7 +42,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'live_station',
     status: 'online',
     stationsCount: 748,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'degalukainos-lt-api',
@@ -47,7 +51,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'live_station',
     status: 'online',
     stationsCount: 770,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'saurida-official',
@@ -56,7 +60,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'live_station',
     status: 'online',
     stationsCount: 34,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'degalu-kaina-lt',
@@ -65,7 +69,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'live_station',
     status: 'online',
     stationsCount: 630,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'kurokainos24-scraper',
@@ -74,7 +78,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'cross_check',
     status: 'online',
     stationsCount: 315,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'osm-overpass',
@@ -82,8 +86,8 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     description: 'Atviras Lietuvos degalinių vietovių ir infrastruktūros registras',
     type: 'supplementary',
     status: 'online',
-    stationsCount: 400,
-    lastChecked: new Date().toISOString()
+    stationsCount: 478,
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'fuel-prices-eu-national',
@@ -92,7 +96,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'national_average',
     status: 'online',
     stationsCount: 1,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'fuel-prices-eu-live',
@@ -101,7 +105,7 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'live_station',
     status: 'online',
     stationsCount: 120,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'openvan-camp',
@@ -110,35 +114,16 @@ const DEFAULT_SOURCE_STATUSES: SourceStatus[] = [
     type: 'national_average',
     status: 'online',
     stationsCount: 1,
-    lastChecked: new Date().toISOString()
-  },
-  {
-    id: 'saurida-github',
-    name: 'Saurida Community GitHub',
-    description: 'Atviro kodo Saurida degalinių kainų archyvas (erkexzcx)',
-    type: 'supplementary',
-    status: 'online',
-    stationsCount: 34,
-    lastChecked: new Date().toISOString()
-  },
-  {
-    id: 'rapidapi-valev-labs',
-    name: 'RapidAPI (Valev Labs)',
-    description: 'Europos kuro kainų API (pasirenkamas šaltinis su API raktu)',
-    type: 'cross_check',
-    status: 'disabled',
-    stationsCount: 0,
-    lastChecked: new Date().toISOString(),
-    errorMessage: 'RAPIDAPI_KEY kintamasis nenurodytas (pasirenkamas šaltinis)'
+    lastChecked: STATIC_CHECK_TIME
   },
   {
     id: 'ev-charging-lithuania',
     name: 'Lietuvos EV Krovimo Tinklai',
-    description: 'Nacionalinis virš 1 600 elektromobilių stotelių registras',
+    description: 'Nacionalinis virš 1 650 elektromobilių stotelių registras',
     type: 'live_station',
     status: 'online',
     stationsCount: 1651,
-    lastChecked: new Date().toISOString()
+    lastChecked: STATIC_CHECK_TIME
   }
 ];
 
@@ -150,25 +135,26 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
 
   // Filters & Controls
-  const [activeViewTab, setActiveViewTab] = useState<'stations' | 'trends'>('stations');
   const [selectedFuel, setSelectedFuel] = useState<FuelType>('gasoline_95');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('all');
   const [selectedCity, setSelectedCity] = useState('all');
   const [sortBy, setSortBy] = useState('price_asc');
-  const [viewMode, setViewMode] = useState<'cards' | 'map' | 'table'>('cards');
+  
+  // Default to 'map' view as requested
+  const [viewMode, setViewMode] = useState<'cards' | 'map' | 'table'>('map');
 
-  // Idea 6: Amenities Filter
+  // Amenities Filter
   const [selectedAmenity, setSelectedAmenity] = useState<string>('all');
 
-  // Idea 9: Only with Prices Toggle
+  // Only with Prices Toggle
   const [onlyWithPrices, setOnlyWithPrices] = useState<boolean>(false);
 
-  // Idea 3: Favorites / Watchlist
+  // Favorites / Watchlist
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [favoritesOnly, setFavoritesOnly] = useState<boolean>(false);
 
-  // Idea 1: Trip Fuel Planner Modal
+  // Trip Fuel Planner Modal
   const [isTripPlannerOpen, setIsTripPlannerOpen] = useState<boolean>(false);
 
   // Geolocation
@@ -193,7 +179,7 @@ export default function HomePage() {
 
   const toggleFavorite = (stationId: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-    setFavorites(prev => {
+    setFavorites((prev) => {
       const next = new Set(prev);
       if (next.has(stationId)) next.delete(stationId);
       else next.add(stationId);
@@ -271,30 +257,30 @@ export default function HomePage() {
 
     setIsLocating(true);
     navigator.geolocation.getCurrentPosition(
-      (pos) => {
+      (position) => {
         setUserCoords({
-          lat: pos.coords.latitude,
-          lng: pos.coords.longitude
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
         });
-        setRadiusKm(15); // default 15 km
+        setRadiusKm(15); // Default 15km
         setSortBy('distance');
         setIsLocating(false);
       },
-      (err) => {
-        console.warn('Geolocation error:', err);
-        alert('Nepavyko nustatyti jūsų vietos. Įsitikinkite, kad leista naudoti vietos nustatymą.');
+      (error) => {
+        console.warn('Geolocation error:', error);
+        alert('Nepavyko gauti jūsų GPS vietos. Patikrinkite naršyklės leidimus.');
         setIsLocating(false);
       },
-      { timeout: 10000, enableHighAccuracy: true }
+      { enableHighAccuracy: true, timeout: 10000 }
     );
   };
 
-  // Handle Community Price Update (Idea 2)
-  const handleCommunityPriceUpdate = (stationId: string, fuelType: FuelType, price: number) => {
-    setData(prev => {
+  // User-submitted price reporter (Waze-style reporting)
+  const handleReportPrice = (stationId: string, fuelType: FuelType, price: number) => {
+    const nowIso = new Date().toISOString();
+    setData((prev) => {
       if (!prev) return prev;
-      const nowIso = new Date().toISOString();
-      const updatedStations = prev.stations.map(s => {
+      const updatedStations = prev.stations.map((s) => {
         if (s.id !== stationId) return s;
         return {
           ...s,
@@ -386,17 +372,17 @@ export default function HomePage() {
       list = list.filter((s) => s.distanceKm !== undefined && s.distanceKm <= radiusKm);
     }
 
-    // 5. Amenities Filter (Idea 6)
+    // 5. Amenities Filter
     if (selectedAmenity && selectedAmenity !== 'all') {
       list = list.filter((s) => s.amenities && s.amenities.includes(selectedAmenity));
     }
 
-    // 6. Only With Prices (Idea 9)
+    // 6. Only With Prices
     if (onlyWithPrices) {
       list = list.filter((s) => s.prices[selectedFuel]?.price !== undefined && s.prices[selectedFuel]!.price > 0);
     }
 
-    // 7. Favorites / Watchlist Only (Idea 3)
+    // 7. Favorites / Watchlist Only
     if (favoritesOnly) {
       list = list.filter((s) => favorites.has(s.id));
     }
@@ -444,160 +430,110 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-slate-50/50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
       {/* Navbar */}
       <Navbar
-        sourcesOnlineCount={data?.sourcesOnlineCount ?? 11}
+        sourcesOnlineCount={data?.sourcesOnlineCount ?? 10}
         totalSourcesCount={data?.totalSourcesCount ?? DEFAULT_SOURCE_STATUSES.length}
-        sourceStatuses={data?.sourceStatuses && data.sourceStatuses.length > 0 ? data.sourceStatuses : DEFAULT_SOURCE_STATUSES}
+        sourceStatuses={
+          data?.sourceStatuses && data.sourceStatuses.length > 0
+            ? data.sourceStatuses
+            : DEFAULT_SOURCE_STATUSES
+        }
         nationalAverages={data?.nationalAverages || ({} as any)}
         lastUpdated={data?.timestamp}
         onRefresh={() => fetchData(true)}
         isRefreshing={isRefreshing}
       />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        {/* Hero Section */}
-        <div className="relative overflow-hidden rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-950 text-white shadow-xl border border-emerald-900/30">
-          <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 -mb-12 w-64 h-64 bg-teal-500/10 rounded-full blur-2xl pointer-events-none" />
-
-          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-            <div className="max-w-2xl space-y-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold tracking-wide">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Multi-šaltinių kainų agregatorius</span>
-                <span className="w-1 h-1 rounded-full bg-emerald-400" />
-                <span>Lietuva ({data?.stations?.length || 880}+ stočių)</span>
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-12">
+        {/* ======================================================== */}
+        {/* HERO FOCUS: SEARCH BAR & INTERACTIVE MAP                */}
+        {/* ======================================================== */}
+        <section className="space-y-4">
+          {/* Header Title with Breathing Room */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pt-2">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-bold mb-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Lietuvos degalinių stebėjimas realiu laiku ({data?.stations?.length || 2400}+ stočių)</span>
               </div>
-
-              <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white leading-tight">
-                Sutaupykite kiekvieną kartą pildamiesi degalus.
+              <h1 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
+                Degalinių Žemėlapis ir Greita Paieška
               </h1>
-
-              <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
-                Palyginkite realias <strong>95 benzino</strong>, <strong>dyzelino</strong>, <strong>LPG</strong> ir <strong>EV krovimo</strong> kainas visose šalies degalinėse realiu laiku.
+              <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-2xl leading-relaxed">
+                Raskite pigiausią kurą arba artimiausią degalinę pagal pavadinimą, gatvę, miestą ar tinklą.
               </p>
             </div>
 
             {/* Quick Trip Planner CTA */}
-            <div className="shrink-0 w-full sm:w-auto">
+            <div className="flex items-center gap-3 shrink-0">
               <button
                 onClick={() => setIsTripPlannerOpen(true)}
-                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-black text-sm shadow-xl shadow-emerald-500/20 transition-all hover:scale-102"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-500 hover:to-teal-600 text-white font-bold text-xs shadow-md shadow-emerald-600/20 transition-all hover:scale-102"
               >
-                <Route className="w-5 h-5" />
+                <Route className="w-4 h-4" />
                 <span>Kuro Maršruto Planuotojas</span>
               </button>
             </div>
           </div>
-        </div>
 
-        {/* Hero Stat Cards */}
-        {data && (
-          <HeroStats
-            data={data}
+          {/* Search Bar & Fast Controls */}
+          <FuelFilterBar
             selectedFuel={selectedFuel}
-            onSelectStation={(id) => setSelectedStationId(id)}
+            onFuelChange={setSelectedFuel}
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
+            selectedBrand={selectedBrand}
+            onBrandChange={setSelectedBrand}
+            selectedCity={selectedCity}
+            onCityChange={setSelectedCity}
+            sortBy={sortBy}
+            onSortChange={setSortBy}
+            viewMode={viewMode}
+            onViewModeChange={setViewMode}
+            isLocating={isLocating}
+            userCoords={userCoords}
+            radiusKm={radiusKm}
+            onLocateUser={handleLocateUser}
+            onRadiusChange={setRadiusKm}
+            availableCities={availableCities}
+            availableBrands={availableBrands}
+            favoritesOnly={favoritesOnly}
+            onFavoritesOnlyChange={setFavoritesOnly}
+            favoritesCount={favorites.size}
+            selectedAmenity={selectedAmenity}
+            onAmenityChange={setSelectedAmenity}
+            onlyWithPrices={onlyWithPrices}
+            onOnlyWithPricesChange={setOnlyWithPrices}
           />
-        )}
 
-        {/* Main Navigation Tabs */}
-        <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setActiveViewTab('stations')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all ${
-                activeViewTab === 'stations'
-                  ? 'bg-emerald-500 text-white shadow-md shadow-emerald-500/20'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-900'
-              }`}
-            >
-              <Fuel className="w-4 h-4" />
-              Degalinių Kainos
-              <span className="text-xs px-2 py-0.5 rounded-full bg-white/20">
-                {filteredStations.length}
+          {/* Interactive Map (Primary Central Element) or List/Table by ViewMode */}
+          {loading ? (
+            <div className="flex flex-col items-center justify-center p-20 gap-3 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800">
+              <Loader2 className="w-8 h-8 animate-spin text-emerald-500" />
+              <span className="text-sm font-semibold text-slate-500">
+                Agreguojamos kainos iš 10 nepriklausomų šaltinių...
               </span>
-            </button>
-
-            <button
-              onClick={() => setActiveViewTab('trends')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all ${
-                activeViewTab === 'trends'
-                  ? 'bg-emerald-500 text-white shadow-md shadow-emerald-500/20'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-900'
-              }`}
-            >
-              <TrendingUp className="w-4 h-4" />
-              ES Rinkos Tendencijos
-            </button>
-          </div>
-
-          <div className="hidden sm:flex items-center gap-1.5 text-xs text-slate-400">
-            <Clock className="w-3.5 h-3.5" />
-            <span>Paskutinis atnaujinimas: {formatRelativeTimeLt(data?.timestamp)}</span>
-          </div>
-        </div>
-
-        {/* TAB 1: Stations view */}
-        {activeViewTab === 'stations' && (
-          <div className="space-y-5">
-            {/* Filter bar with all new features */}
-            <FuelFilterBar
-              selectedFuel={selectedFuel}
-              onFuelChange={setSelectedFuel}
-              searchQuery={searchQuery}
-              onSearchChange={setSearchQuery}
-              selectedBrand={selectedBrand}
-              onBrandChange={setSelectedBrand}
-              selectedCity={selectedCity}
-              onCityChange={setSelectedCity}
-              sortBy={sortBy}
-              onSortChange={setSortBy}
-              viewMode={viewMode}
-              onViewModeChange={setViewMode}
-              isLocating={isLocating}
-              userCoords={userCoords}
-              radiusKm={radiusKm}
-              onLocateUser={handleLocateUser}
-              onRadiusChange={setRadiusKm}
-              availableCities={availableCities}
-              availableBrands={availableBrands}
-              onOpenTripPlanner={() => setIsTripPlannerOpen(true)}
-              favoritesOnly={favoritesOnly}
-              onFavoritesOnlyChange={setFavoritesOnly}
-              favoritesCount={favorites.size}
-              selectedAmenity={selectedAmenity}
-              onAmenityChange={setSelectedAmenity}
-              onlyWithPrices={onlyWithPrices}
-              onOnlyWithPricesChange={setOnlyWithPrices}
-            />
-
-            {/* Content by ViewMode */}
-            {loading ? (
-              <div className="flex flex-col items-center justify-center p-20 gap-3 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800">
-                <Loader2 className="w-8 h-8 animate-spin text-emerald-500" />
-                <span className="text-sm font-semibold text-slate-500">
-                  Agreguojamos kainos iš nepriklausomų šaltinių...
-                </span>
+            </div>
+          ) : error && (!data || filteredStations.length === 0) ? (
+            <div className="flex flex-col items-center justify-center p-12 text-center bg-white dark:bg-slate-900 rounded-2xl border border-amber-200 dark:border-amber-900/50 shadow-sm gap-3">
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500">
+                <AlertTriangle className="w-6 h-6" />
               </div>
-            ) : error && (!data || filteredStations.length === 0) ? (
-              <div className="flex flex-col items-center justify-center p-12 text-center bg-white dark:bg-slate-900 rounded-2xl border border-amber-200 dark:border-amber-900/50 shadow-sm gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500">
-                  <AlertTriangle className="w-6 h-6" />
-                </div>
-                <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">
-                  Laikinas ryšio sutrikimas su išoriniais serveriais
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md">
-                  {error}. Paspauskite mygtuką žemiau, kad perkrautumėte duomenis.
-                </p>
-                <button
-                  onClick={() => fetchData(true)}
-                  className="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition-colors shadow-md"
-                >
-                  <RefreshCw className="w-3.5 h-3.5" />
-                  Bandyti iš naujo
-                </button>
-              </div>
-            ) : viewMode === 'map' ? (
+              <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">
+                Laikinas ryšio sutrikimas su išoriniais serveriais
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md">
+                {error}. Paspauskite mygtuką žemiau, kad perkrautumėte duomenis.
+              </p>
+              <button
+                onClick={() => fetchData(true)}
+                className="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition-colors shadow-md"
+              >
+                <RefreshCw className="w-3.5 h-3.5" />
+                Bandyti iš naujo
+              </button>
+            </div>
+          ) : viewMode === 'map' ? (
+            <div className="relative rounded-3xl overflow-hidden border border-slate-200/90 dark:border-slate-800 shadow-xl bg-slate-900">
               <MapWrapper
                 stations={filteredStations}
                 selectedFuel={selectedFuel}
@@ -606,58 +542,185 @@ export default function HomePage() {
                 onLocateUser={handleLocateUser}
                 isLocating={isLocating}
               />
-            ) : viewMode === 'table' ? (
-              <StationTable
-                stations={filteredStations}
-                selectedFuel={selectedFuel}
-                nationalAvgPrice={nationalAvg}
-                onSelectStation={(id) => setSelectedStationId(id)}
-              />
-            ) : (
-              <StationList
-                stations={filteredStations}
-                selectedFuel={selectedFuel}
-                nationalAvgPrice={nationalAvg}
-                onSelectStation={(id) => setSelectedStationId(id)}
-                favorites={favorites}
-                onToggleFavorite={toggleFavorite}
-              />
-            )}
-          </div>
+            </div>
+          ) : viewMode === 'table' ? (
+            <StationTable
+              stations={filteredStations}
+              selectedFuel={selectedFuel}
+              nationalAvgPrice={nationalAvg}
+              onSelectStation={(id) => setSelectedStationId(id)}
+            />
+          ) : (
+            <StationList
+              stations={filteredStations}
+              selectedFuel={selectedFuel}
+              nationalAvgPrice={nationalAvg}
+              onSelectStation={(id) => setSelectedStationId(id)}
+              onReportPrice={handleReportPrice}
+              onToggleFavorite={toggleFavorite}
+              favorites={favorites}
+            />
+          )}
+        </section>
+
+        {/* ======================================================== */}
+        {/* SECTION 2: RASTOS DEGALINĖS (CARD LIST BELOW MAP)       */}
+        {/* ======================================================== */}
+        {viewMode === 'map' && !loading && filteredStations.length > 0 && (
+          <section className="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800/80">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h2 className="text-xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                  <span>Rastų degalinių sąrašas</span>
+                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
+                    {filteredStations.length} degalinės
+                  </span>
+                </h2>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  Palyginkite kainas kortelėse arba paleiskite navigaciją į degalinę (Google Maps, Waze, Apple Maps).
+                </p>
+              </div>
+
+              {/* Quick count & sorting info */}
+              <div className="text-xs text-slate-400">
+                <span>Rūšiuojama: </span>
+                <strong className="text-slate-700 dark:text-slate-300">
+                  {sortBy === 'price_asc'
+                    ? 'Pigiausi viršuje'
+                    : sortBy === 'distance'
+                    ? 'Artimiausi viršuje'
+                    : sortBy === 'updated'
+                    ? 'Naujausi duomenys'
+                    : 'Pagal tinklą'}
+                </strong>
+              </div>
+            </div>
+
+            <StationList
+              stations={filteredStations}
+              selectedFuel={selectedFuel}
+              nationalAvgPrice={nationalAvg}
+              onSelectStation={(id) => setSelectedStationId(id)}
+              onReportPrice={handleReportPrice}
+              onToggleFavorite={toggleFavorite}
+              favorites={favorites}
+            />
+          </section>
         )}
 
-        {/* TAB 2: National Trends view */}
-        {activeViewTab === 'trends' && (
-          <div className="space-y-6">
-            <NationalTrendChart
-              trends={trends}
-              nationalAverages={data?.nationalAverages || ({} as any)}
+        {/* ======================================================== */}
+        {/* SECTION 3: ŠIANDIENOS KAINŲ LYDERIAI IR VIDURKIAI        */}
+        {/* (Moved down to a dedicated airy section to avoid noise)  */}
+        {/* ======================================================== */}
+        {data && (
+          <section className="pt-8 border-t border-slate-200 dark:border-slate-800/80 space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-bold mb-1.5">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  Nacionalinė suvestinė
+                </div>
+                <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
+                  Šiandienos Kainų Rekordai Lietuvoje
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+                  Pigiausios šiuo metu užfiksuotos kuro kainos degalinėse ir oficialus Europos Komisijos naftos biuletenio vidurkis.
+                </p>
+              </div>
+
+              <div className="text-xs text-slate-400 shrink-0">
+                <span>Atnaujinta: {formatRelativeTimeLt(data.timestamp)}</span>
+              </div>
+            </div>
+
+            {/* The 4 Stat Cards */}
+            <HeroStats
+              data={data}
+              selectedFuel={selectedFuel}
+              onSelectStation={(id) => setSelectedStationId(id)}
             />
-          </div>
+          </section>
         )}
+
+        {/* ======================================================== */}
+        {/* SECTION 4: TENDENCIJOS & KELIONIŲ MARŠRUTAI             */}
+        {/* ======================================================== */}
+        <section className="pt-8 border-t border-slate-200 dark:border-slate-800/80 space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+            {/* 30-Day Trends Chart */}
+            <div className="lg:col-span-8 bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-7 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                      <TrendingUp className="w-5 h-5 text-emerald-500" />
+                      30 Dienų Nacionalinė Kainų Dinamika
+                    </h3>
+                    <p className="text-xs text-slate-400 mt-0.5">
+                      Vidutinių benzino, dyzelino ir LPG kainų kaita Lietuvos degalinėse
+                    </p>
+                  </div>
+                </div>
+                <NationalTrendChart trends={trends} selectedFuel={selectedFuel} />
+              </div>
+            </div>
+
+            {/* Trip Fuel Planner Feature Callout */}
+            <div className="lg:col-span-4 bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-7 border border-emerald-800/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
+              <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+
+              <div className="relative z-10 space-y-3">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
+                  <Route className="w-3.5 h-3.5 text-emerald-400" />
+                  Kelionių optimizavimas
+                </div>
+
+                <h3 className="text-xl font-black text-white leading-tight">
+                  Planuojate tolimą kelionę Lietuvoje?
+                </h3>
+
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Įveskite maršrutą (pvz., Vilnius – Klaipėda) ir sistema suras pigiausias degalines jūsų kelio koridoriuje. Taip sutaupysite iki <strong>15–20 €</strong> vienam bakui.
+                </p>
+              </div>
+
+              <div className="relative z-10 pt-6">
+                <button
+                  onClick={() => setIsTripPlannerOpen(true)}
+                  className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/25 transition-all"
+                >
+                  <Route className="w-4 h-4" />
+                  <span>Atidaryti Maršruto Planuotoją</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      {/* Station Detail Modal with Community Price Reporting & Favorites */}
-      <StationDetailModal
-        stationId={selectedStationId}
-        onClose={() => setSelectedStationId(null)}
-        nationalAverages={data?.nationalAverages || ({} as any)}
-        isFavorite={selectedStationId ? favorites.has(selectedStationId) : false}
-        onToggleFavorite={toggleFavorite}
-        onCommunityPriceUpdate={handleCommunityPriceUpdate}
-      />
-
-      {/* Idea 1: Trip Fuel Planner Modal */}
-      {data?.stations && (
-        <TripFuelPlannerModal
-          isOpen={isTripPlannerOpen}
-          onClose={() => setIsTripPlannerOpen(false)}
-          stations={data.stations}
-          onSelectStation={(id) => setSelectedStationId(id)}
+      {/* Station Detail Modal */}
+      {selectedStationId && (
+        <StationDetailModal
+          stationId={selectedStationId}
+          onClose={() => setSelectedStationId(null)}
+          onReportPrice={handleReportPrice}
+          onToggleFavorite={toggleFavorite}
+          isFavorite={favorites.has(selectedStationId)}
         />
       )}
 
-      {/* Upgraded Footer */}
+      {/* Trip Fuel Planner Modal */}
+      <TripFuelPlannerModal
+        isOpen={isTripPlannerOpen}
+        onClose={() => setIsTripPlannerOpen(false)}
+        stations={data?.stations || []}
+        selectedFuel={selectedFuel}
+        onSelectStation={(id) => {
+          setIsTripPlannerOpen(false);
+          setSelectedStationId(id);
+        }}
+      />
+
       <Footer />
     </div>
   );

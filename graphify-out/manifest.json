@@ -30,9 +30,9 @@
     "semantic_hash": "7c2e8898e898dc8514895d50aae2d8ab"
   },
   "app/page.tsx": {
-    "mtime": 1792950771.8314147,
-    "seen": 1793560391.4596531,
-    "ast_hash": "f1c48c7751a00eacddab4fcaf4d189cf",
+    "mtime": 1793563916.7553108,
+    "seen": 1793564114.0553746,
+    "ast_hash": "7281e79efb8263de8fe0bf72aa5d7ba3",
     "semantic_hash": ""
   },
   "app/statistika/page.tsx": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "components/FuelFilterBar.tsx": {
-    "mtime": 1792944593.09479,
-    "seen": 1792944836.9420912,
-    "ast_hash": "f9c946739b77133d9a9e3407b39cf98c",
+    "mtime": 1793563916.875283,
+    "seen": 1793564114.0553818,
+    "ast_hash": "059ee30d02a9bb85c15b5d948383a65b",
     "semantic_hash": ""
   },
   "components/HeroStats.tsx": {
@@ -126,9 +126,9 @@
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "lib/aggregate.ts": {
-    "mtime": 1792950771.833526,
-    "seen": 1793560391.459688,
-    "ast_hash": "83f49438ea1f8c4d5afd74f20f5f2fa3",
+    "mtime": 1793563916.9640164,
+    "seen": 1793564114.0554085,
+    "ast_hash": "708dffd6a8e558f3a11b1f34e95e7c80",
     "semantic_hash": ""
   },
   "lib/price-estimator.ts": {
@@ -186,22 +186,10 @@
     "semantic_hash": "c4a8ca8953a2ab3be4de46ae4116a32e"
   },
   "lib/sources/osm-overpass.ts": {
-    "mtime": 1792157962.2083468,
-    "seen": 1792940698.284292,
-    "ast_hash": "496d6a85f352d9d7a5a47cf953b579ee",
-    "semantic_hash": "496d6a85f352d9d7a5a47cf953b579ee"
-  },
-  "lib/sources/rapidapi.ts": {
-    "mtime": 1792155835.0137856,
-    "seen": 1792940698.2842934,
-    "ast_hash": "9ea5c4ba4b780079c171da040e6f3e21",
-    "semantic_hash": "9ea5c4ba4b780079c171da040e6f3e21"
-  },
-  "lib/sources/saurida-github.ts": {
-    "mtime": 1792157336.460055,
-    "seen": 1792940698.2842953,
-    "ast_hash": "e08dd373180036db5527dae8c19d641d",
-    "semantic_hash": "e08dd373180036db5527dae8c19d641d"
+    "mtime": 1793561754.2713487,
+    "seen": 1793561865.453022,
+    "ast_hash": "82fcbcc5eac723660bac74defd630f85",
+    "semantic_hash": ""
   },
   "lib/sources/saurida-official.ts": {
     "mtime": 1792335586.6303804,
@@ -222,9 +210,9 @@
     "semantic_hash": ""
   },
   "lib/utils.ts": {
-    "mtime": 1792950771.8356264,
-    "seen": 1793560391.4597197,
-    "ast_hash": "7a4b1d94886825800e877248303e8e39",
+    "mtime": 1793561754.7262895,
+    "seen": 1793561865.453034,
+    "ast_hash": "de41623bd41a654d8e8d7c4ca51798d5",
     "semantic_hash": ""
   },
   "next.config.ts": {
@@ -264,15 +252,15 @@
     "semantic_hash": "25bcbc8c6ef344b55c4c575bd88b05e0"
   },
   "app/naujienos/page.tsx": {
-    "mtime": 1792941989.7232697,
-    "seen": 1792942104.2019224,
-    "ast_hash": "140420d04bfb9d0c33b1d0b40f6e1f3c",
+    "mtime": 1793561753.69525,
+    "seen": 1793561865.4529595,
+    "ast_hash": "8598ce3ccc203d5e930c3ae7d35f991a",
     "semantic_hash": ""
   },
   "app/nuolaidos/page.tsx": {
-    "mtime": 1792941912.903935,
-    "seen": 1792942104.2019246,
-    "ast_hash": "2a37450060225c1bd7a34c5e44c3cac2",
+    "mtime": 1793561754.069409,
+    "seen": 1793561865.4529614,
+    "ast_hash": "8c212b394bad23c9b93c7e9bb7d2be34",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -324,9 +312,45 @@
     "semantic_hash": ""
   },
   "lib/sources/ev-stations.ts": {
-    "mtime": 1792950771.834583,
-    "seen": 1793560391.459699,
-    "ast_hash": "2099808b9496cfe48143938619711225",
+    "mtime": 1793561752.458243,
+    "seen": 1793561865.4530113,
+    "ast_hash": "5a6c2a4d98a55c79d27a7884a6d3be68",
+    "semantic_hash": ""
+  },
+  "app/api/discounts/route.ts": {
+    "mtime": 1793561752.798035,
+    "seen": 1793561865.452942,
+    "ast_hash": "476d29f157bb6667c8510ed43fa0c49b",
+    "semantic_hash": ""
+  },
+  "app/api/news/route.ts": {
+    "mtime": 1793561753.1088781,
+    "seen": 1793561865.4529495,
+    "ast_hash": "bb739834c0af445b50dd274644298072",
+    "semantic_hash": ""
+  },
+  "lib/sources/discounts-scraper.ts": {
+    "mtime": 1793561746.6907568,
+    "seen": 1793561865.4530077,
+    "ast_hash": "636f557dcbf0d9a991fd7adb366086d6",
+    "semantic_hash": ""
+  },
+  "lib/sources/ev-seed-data.json": {
+    "mtime": 1793560891.7960002,
+    "seen": 1793561865.4530094,
+    "ast_hash": "8a54d54b7ff850ad96240b4b26035b8a",
+    "semantic_hash": ""
+  },
+  "lib/sources/news-scraper.ts": {
+    "mtime": 1793561746.8412495,
+    "seen": 1793561865.4530187,
+    "ast_hash": "abe5c4e840f885ffd713b09ba8f60326",
+    "semantic_hash": ""
+  },
+  "lib/sources/osm-seed-data.json": {
+    "mtime": 1793560973.3837469,
+    "seen": 1793561865.4530234,
+    "ast_hash": "f6dbcbe7b50f7e4c9e1b6b6aa9e0c9da",
     "semantic_hash": ""
   }
 }

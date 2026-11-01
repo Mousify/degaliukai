@@ -30,9 +30,9 @@
     "semantic_hash": "7c2e8898e898dc8514895d50aae2d8ab"
   },
   "app/page.tsx": {
-    "mtime": 1792945454.3689399,
-    "seen": 1792945490.882758,
-    "ast_hash": "444028c0d21978285c08392c4c69c9f2",
+    "mtime": 1793561751.4958394,
+    "seen": 1793561865.4529638,
+    "ast_hash": "4d10dcfe5dc0eb57bdb3255341cbfe21",
     "semantic_hash": ""
   },
   "app/statistika/page.tsx": {
@@ -84,10 +84,10 @@
     "semantic_hash": "d7fde5f8ad3978db9790e7e5de0e6da2"
   },
   "components/SourceStatusModal.tsx": {
-    "mtime": 1792155971.0615957,
-    "seen": 1792940698.284264,
-    "ast_hash": "be187b3d673abc85fd073c9c1d3cc49a",
-    "semantic_hash": "be187b3d673abc85fd073c9c1d3cc49a"
+    "mtime": 1792950771.832494,
+    "seen": 1793560391.4596722,
+    "ast_hash": "2d78b04d6231114c9b8beeadf4c9d5a3",
+    "semantic_hash": ""
   },
   "components/StationDetailModal.tsx": {
     "mtime": 1792944781.0559275,
@@ -126,9 +126,9 @@
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "lib/aggregate.ts": {
-    "mtime": 1792945429.979878,
-    "seen": 1792945490.8827903,
-    "ast_hash": "c7020ced5c38cbc833d868aa8031e55b",
+    "mtime": 1793561751.865849,
+    "seen": 1793561865.452997,
+    "ast_hash": "39566d631f83c54910570eb067824e48",
     "semantic_hash": ""
   },
   "lib/price-estimator.ts": {
@@ -186,10 +186,10 @@
     "semantic_hash": "c4a8ca8953a2ab3be4de46ae4116a32e"
   },
   "lib/sources/osm-overpass.ts": {
-    "mtime": 1792157962.2083468,
-    "seen": 1792940698.284292,
-    "ast_hash": "496d6a85f352d9d7a5a47cf953b579ee",
-    "semantic_hash": "496d6a85f352d9d7a5a47cf953b579ee"
+    "mtime": 1793561754.2713487,
+    "seen": 1793561865.453022,
+    "ast_hash": "82fcbcc5eac723660bac74defd630f85",
+    "semantic_hash": ""
   },
   "lib/sources/rapidapi.ts": {
     "mtime": 1792155835.0137856,
@@ -222,10 +222,10 @@
     "semantic_hash": ""
   },
   "lib/utils.ts": {
-    "mtime": 1792155740.898469,
-    "seen": 1792940698.2843013,
-    "ast_hash": "ff925ac518ff6a87ec901049549601be",
-    "semantic_hash": "ff925ac518ff6a87ec901049549601be"
+    "mtime": 1793561754.7262895,
+    "seen": 1793561865.453034,
+    "ast_hash": "de41623bd41a654d8e8d7c4ca51798d5",
+    "semantic_hash": ""
   },
   "next.config.ts": {
     "mtime": 1792155518.3265834,
@@ -264,15 +264,15 @@
     "semantic_hash": "25bcbc8c6ef344b55c4c575bd88b05e0"
   },
   "app/naujienos/page.tsx": {
-    "mtime": 1792941989.7232697,
-    "seen": 1792942104.2019224,
-    "ast_hash": "140420d04bfb9d0c33b1d0b40f6e1f3c",
+    "mtime": 1793561753.69525,
+    "seen": 1793561865.4529595,
+    "ast_hash": "8598ce3ccc203d5e930c3ae7d35f991a",
     "semantic_hash": ""
   },
   "app/nuolaidos/page.tsx": {
-    "mtime": 1792941912.903935,
-    "seen": 1792942104.2019246,
-    "ast_hash": "2a37450060225c1bd7a34c5e44c3cac2",
+    "mtime": 1793561754.069409,
+    "seen": 1793561865.4529614,
+    "ast_hash": "8c212b394bad23c9b93c7e9bb7d2be34",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -324,9 +324,45 @@
     "semantic_hash": ""
   },
   "lib/sources/ev-stations.ts": {
-    "mtime": 1792945416.6984267,
-    "seen": 1792945490.8828013,
-    "ast_hash": "4b7241fae911f6de2b718abce21f200e",
+    "mtime": 1793561752.458243,
+    "seen": 1793561865.4530113,
+    "ast_hash": "5a6c2a4d98a55c79d27a7884a6d3be68",
+    "semantic_hash": ""
+  },
+  "app/api/discounts/route.ts": {
+    "mtime": 1793561752.798035,
+    "seen": 1793561865.452942,
+    "ast_hash": "476d29f157bb6667c8510ed43fa0c49b",
+    "semantic_hash": ""
+  },
+  "app/api/news/route.ts": {
+    "mtime": 1793561753.1088781,
+    "seen": 1793561865.4529495,
+    "ast_hash": "bb739834c0af445b50dd274644298072",
+    "semantic_hash": ""
+  },
+  "lib/sources/discounts-scraper.ts": {
+    "mtime": 1793561746.6907568,
+    "seen": 1793561865.4530077,
+    "ast_hash": "636f557dcbf0d9a991fd7adb366086d6",
+    "semantic_hash": ""
+  },
+  "lib/sources/ev-seed-data.json": {
+    "mtime": 1793560891.7960002,
+    "seen": 1793561865.4530094,
+    "ast_hash": "8a54d54b7ff850ad96240b4b26035b8a",
+    "semantic_hash": ""
+  },
+  "lib/sources/news-scraper.ts": {
+    "mtime": 1793561746.8412495,
+    "seen": 1793561865.4530187,
+    "ast_hash": "abe5c4e840f885ffd713b09ba8f60326",
+    "semantic_hash": ""
+  },
+  "lib/sources/osm-seed-data.json": {
+    "mtime": 1793560973.3837469,
+    "seen": 1793561865.4530234,
+    "ast_hash": "f6dbcbe7b50f7e4c9e1b6b6aa9e0c9da",
     "semantic_hash": ""
   }
 }
