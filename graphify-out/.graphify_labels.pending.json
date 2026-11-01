@@ -1,8 +1,14 @@
 {
-  "2": "aggregate.ts",
-  "5": "types.ts",
+  "2": "aggregateFuelData",
+  "5": "fetchWithRetry",
   "6": "fuel-prices-eu-national.ts",
   "7": "react",
   "8": "README.md",
-  "9": "AGENTS.md"
+  "9": "AGENTS.md",
+  "10": "types.ts",
+  "11": "aggregate.ts",
+  "12": "degalu-kaina-lt.ts",
+  "14": "price-estimator.ts",
+  "15": "degalukaina-scraper.ts",
+  "16": "saurida-official.ts"
 }

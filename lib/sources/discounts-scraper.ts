@@ -361,3 +361,4 @@ export async function fetchLiveDiscounts(): Promise<DiscountsResult> {
     sources: sourcesChecked.length > 0 ? sourcesChecked : ['Viada.lt Akcijos', 'Circle K Pasiūlymai', 'Neste.lt Klientų Naudos', 'Baltic Petroleum']
   };
 }
+

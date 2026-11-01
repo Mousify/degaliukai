@@ -1,0 +1,421 @@
+{
+  "communities": {
+    "0": [
+      "app_page",
+      "app_page_homepage",
+      "app_statistika_page",
+      "app_statistika_page_brandstats",
+      "app_statistika_page_citystats",
+      "app_statistika_page_statistikapage",
+      "components_footer",
+      "components_footer_footer",
+      "components_fuelfilterbar",
+      "components_fuelfilterbar_fuelfilterbar",
+      "components_fuelfilterbar_fuelfilterbarprops",
+      "components_herostats",
+      "components_herostats_herostats",
+      "components_herostats_herostatsprops",
+      "components_leafletmap",
+      "components_leafletmap_leafletmap",
+      "components_leafletmap_leafletmapprops",
+      "components_mapwrapper",
+      "components_mapwrapper_dynamicleafletmap",
+      "components_mapwrapper_mapwrapper",
+      "components_mapwrapper_mapwrapperprops",
+      "components_nationaltrendchart",
+      "components_nationaltrendchart_nationaltrendchart",
+      "components_nationaltrendchart_nationaltrendchartprops",
+      "components_navbar",
+      "components_navbar_nav_links",
+      "components_navbar_navbar",
+      "components_sourcestatusmodal",
+      "components_sourcestatusmodal_sourcestatusmodal",
+      "components_sourcestatusmodal_sourcestatusmodalprops",
+      "components_stationdetailmodal",
+      "components_stationdetailmodal_stationdetailmodal",
+      "components_stationlist",
+      "components_stationlist_stationlist",
+      "components_stationlist_stationlistprops",
+      "components_stationtable",
+      "components_stationtable_stationtable",
+      "components_stationtable_stationtableprops",
+      "components_themetoggle",
+      "components_themetoggle_themetoggle",
+      "lib_sources_station_directory",
+      "lib_sources_station_directory_lithuania_seed_stations",
+      "lib_sources_station_directory_seedstationconfig",
+      "lib_types",
+      "lib_types_aggregatedresponse",
+      "lib_types_fueltype",
+      "lib_types_station",
+      "lib_types_stationamenity",
+      "lib_types_trendpoint",
+      "lib_utils",
+      "lib_utils_cn",
+      "lib_utils_formatprice",
+      "lib_utils_formatpricediff",
+      "lib_utils_formatrelativetimelt",
+      "lib_utils_getbrandstyle",
+      "lib_utils_getfuellabel",
+      "ref_lucide_react",
+      "ref_react"
+    ],
+    "1": [
+      "eslint_config",
+      "eslint_config_eslintconfig",
+      "package",
+      "package_dependencies",
+      "package_dependencies_class_variance_authority",
+      "package_dependencies_clsx",
+      "package_dependencies_leaflet",
+      "package_dependencies_leaflet_markercluster",
+      "package_dependencies_lucide_react",
+      "package_dependencies_next_themes",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_recharts",
+      "package_dependencies_tailwind_merge",
+      "package_dependencies_types_leaflet",
+      "package_dependencies_types_leaflet_markercluster",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_turbopack",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version",
+      "ref_class_variance_authority",
+      "ref_clsx",
+      "ref_eslint",
+      "ref_eslint_config_next",
+      "ref_leaflet",
+      "ref_leaflet_markercluster",
+      "ref_next_themes",
+      "ref_react_dom",
+      "ref_recharts",
+      "ref_tailwind_merge",
+      "ref_tailwindcss",
+      "ref_tailwindcss_turbopack",
+      "ref_types_leaflet",
+      "ref_types_leaflet_markercluster",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript"
+    ],
+    "2": [
+      "app_api_cron_route",
+      "app_api_cron_route_get",
+      "app_api_prices_route",
+      "app_api_prices_route_get",
+      "lib_aggregate",
+      "lib_aggregate_aggregatefueldata",
+      "lib_aggregate_aggregatefueldata_addrawpriceobservation",
+      "lib_aggregate_aggregatefueldata_getobslist",
+      "lib_aggregate_brand_colors",
+      "lib_aggregate_issamestation",
+      "lib_aggregate_normalizeaddress",
+      "lib_aggregate_normalizebrand",
+      "lib_aggregate_rationale_538",
+      "lib_sources_kurokainos24_scraper_scrapekurokainos24",
+      "lib_sources_kurokainos24_scraper_scrapekurokainos24_parsepricelt",
+      "lib_sources_openvan_fetchopenvanprices",
+      "lib_sources_station_directory_generateseedstations",
+      "scratch_test",
+      "scratch_test_test",
+      "verify_agg",
+      "verify_agg_main"
+    ],
+    "3": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "4": [
+      "app_api_stations_id_route",
+      "app_api_stations_id_route_get",
+      "app_globals",
+      "app_layout",
+      "app_layout_geistmono",
+      "app_layout_geistsans",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_layout_viewport",
+      "components_themeprovider",
+      "components_themeprovider_themeprovider",
+      "lib_utils_calculatedistance",
+      "next_config",
+      "next_config_nextconfig",
+      "package_dependencies_next",
+      "ref_next"
+    ],
+    "5": [
+      "lib_sources_custom_feeds",
+      "lib_sources_custom_feeds_customfeedresult",
+      "lib_sources_custom_feeds_fetchcustomfeed",
+      "lib_sources_degalu_kaina_lt_degalukainaltresult",
+      "lib_sources_degalukainos_api",
+      "lib_sources_degalukainos_api_brand_colors",
+      "lib_sources_degalukainos_api_degalukainosapiresult",
+      "lib_sources_degalukainos_api_fetchdegalukainosapistations",
+      "lib_sources_degalukainos_api_normalizebrand",
+      "lib_sources_fuel_prices_eu",
+      "lib_sources_fuel_prices_eu_fetchfuelpriceseu",
+      "lib_sources_fuel_prices_eu_fuelpriceseuresult",
+      "lib_types_rawfuelprice",
+      "lib_utils_fetchwithretry"
+    ],
+    "6": [
+      "app_api_national_trends_route",
+      "app_api_national_trends_route_get",
+      "components_navbar_navbarprops",
+      "components_stationdetailmodal_stationdetailmodalprops",
+      "lib_sources_fuel_prices_eu_national",
+      "lib_sources_fuel_prices_eu_national_fetchfuelpriceseunational",
+      "lib_sources_fuel_prices_eu_national_fuelpriceseunationalresult",
+      "lib_sources_fuel_prices_eu_national_generatehistoricaltrends",
+      "lib_sources_fuel_prices_eu_national_getfallbacknationaldata",
+      "lib_sources_openvan",
+      "lib_sources_openvan_openvanresult",
+      "lib_types_nationalaverage"
+    ],
+    "7": [
+      "lib_sources_kurokainos24_scraper",
+      "lib_sources_kurokainos24_scraper_kurokainos24result",
+      "lib_sources_osm_overpass",
+      "lib_sources_osm_overpass_fetchosmoverpassstations",
+      "lib_sources_osm_overpass_osmoverpassresult",
+      "lib_sources_osm_overpass_osmoverpassstation",
+      "lib_sources_rapidapi",
+      "lib_sources_rapidapi_fetchrapidapifuelprices",
+      "lib_sources_rapidapi_rapidapiresult",
+      "lib_types_sourcestatus"
+    ],
+    "8": [
+      "lib_price_estimator",
+      "lib_price_estimator_estimatefuelprice",
+      "lib_price_estimator_gettimedecay",
+      "lib_price_estimator_market_bounds",
+      "lib_price_estimator_priceobservation",
+      "lib_price_estimator_source_authority",
+      "lib_types_fuelpriceentry"
+    ],
+    "9": [
+      "lib_sources_degalu_kaina_lt",
+      "lib_sources_degalu_kaina_lt_brand_slugs",
+      "lib_sources_degalu_kaina_lt_extractpagedate",
+      "lib_sources_degalu_kaina_lt_geojsonfeature",
+      "lib_sources_degalu_kaina_lt_normalizebrand",
+      "lib_sources_degalu_kaina_lt_parsegeojsonfrompage",
+      "lib_sources_degalu_kaina_lt_scrapedegalukainalt"
+    ],
+    "10": [
+      "lib_sources_degalukaina_scraper",
+      "lib_sources_degalukaina_scraper_degalukainascraperresult",
+      "lib_sources_degalukaina_scraper_extractbrand",
+      "lib_sources_degalukaina_scraper_extractcity",
+      "lib_sources_degalukaina_scraper_scrapedegalukaina"
+    ],
+    "11": [
+      "lib_sources_saurida_official",
+      "lib_sources_saurida_official_normalizecitykey",
+      "lib_sources_saurida_official_saurida_station_coords",
+      "lib_sources_saurida_official_sauridaofficialresult",
+      "lib_sources_saurida_official_scrapesauridaofficial"
+    ],
+    "12": [
+      "lib_sources_saurida_github",
+      "lib_sources_saurida_github_fetchsauridagithubprices",
+      "lib_sources_saurida_github_saurida_metadata",
+      "lib_sources_saurida_github_sauridaresult"
+    ],
+    "13": [
+      "vercel",
+      "vercel_crons",
+      "vercel_schema"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11675741076830005,
+    "1": 0.05411764705882353,
+    "2": 0.17142857142857143,
+    "3": 0.10526315789473684,
+    "4": 0.15,
+    "5": 0.24175824175824176,
+    "6": 0.2727272727272727,
+    "7": 0.26666666666666666,
+    "8": 0.3333333333333333,
+    "9": 0.42857142857142855,
+    "10": 0.6,
+    "11": 0.5,
+    "12": 0.5,
+    "13": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "lib_types_sourcestatus",
+      "label": "SourceStatus",
+      "degree": 30
+    },
+    {
+      "id": "lib_aggregate_aggregatefueldata",
+      "label": "aggregateFuelData()",
+      "degree": 28
+    },
+    {
+      "id": "lib_utils_fetchwithretry",
+      "label": "fetchWithRetry()",
+      "degree": 23
+    },
+    {
+      "id": "lib_types_fueltype",
+      "label": "FuelType",
+      "degree": 22
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 17
+    },
+    {
+      "id": "lib_types_station",
+      "label": "Station",
+      "degree": 16
+    },
+    {
+      "id": "lib_types_rawfuelprice",
+      "label": "RawFuelPrice",
+      "degree": 16
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "degree": 15
+    },
+    {
+      "id": "lib_types_nationalaverage",
+      "label": "NationalAverage",
+      "degree": 12
+    }
+  ],
+  "surprises": [
+    {
+      "source": "SourceStatusModalProps",
+      "target": "SourceStatus",
+      "source_files": [
+        "components/SourceStatusModal.tsx",
+        "lib/types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `SourceStatusModalProps` unexpectedly reaches hub `SourceStatus`"
+    },
+    {
+      "source": "FuelFilterBarProps",
+      "target": "FuelType",
+      "source_files": [
+        "components/FuelFilterBar.tsx",
+        "lib/types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `FuelFilterBarProps` unexpectedly reaches hub `FuelType`"
+    },
+    {
+      "source": "NationalTrendChartProps",
+      "target": "NationalAverage",
+      "source_files": [
+        "components/NationalTrendChart.tsx",
+        "lib/types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "StationDetailModalProps",
+      "target": "FuelType",
+      "source_files": [
+        "components/StationDetailModal.tsx",
+        "lib/types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "NavbarProps",
+      "target": "SourceStatus",
+      "source_files": [
+        "components/Navbar.tsx",
+        "lib/types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `next` connect `next` to `types.ts`, `package.json`, `aggregate.ts`, `fuel-prices-eu-national.ts`?",
+      "why": "High betweenness centrality (0.139) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `types.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11675741076830005 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `types.ts` to `package.json`, `next`?",
+      "why": "High betweenness centrality (0.070) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05411764705882353 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `SourceStatus` connect `SourceStatus` to `types.ts`, `aggregate.ts`, `fetchWithRetry`, `fuel-prices-eu-national.ts`, `degalu-kaina-lt.ts`, `degalukaina-scraper.ts`, `saurida-official.ts`, `saurida-github.ts`?",
+      "why": "High betweenness centrality (0.063) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
