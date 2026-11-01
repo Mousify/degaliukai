@@ -56,7 +56,8 @@ export function formatPriceDiff(diff?: number): { text: string; isPositive: bool
  * Formats ISO date to human relative time in Lithuanian (e.g. "prieš 15 min.", "prieš 2 val.")
  */
 export function formatRelativeTimeLt(isoDateString?: string): string {
-  if (!isoDateString) return 'Nežinoma';
+  if (!isoDateString) return 'Ką tik';
+  if (typeof window === 'undefined') return 'Šiandien';
   try {
     const date = new Date(isoDateString);
     const now = new Date();

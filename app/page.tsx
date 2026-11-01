@@ -245,6 +245,14 @@ export default function HomePage() {
   useEffect(() => {
     fetchData();
     fetchTrends();
+
+    // Auto-refresh sources every 30 minutes
+    const interval = setInterval(() => {
+      fetchData(true);
+      fetchTrends();
+    }, 30 * 60 * 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   // Geolocation Handler

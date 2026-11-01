@@ -25,7 +25,7 @@ import { fetchEvChargingStations } from './sources/ev-stations';
 // In-memory cache for fast response times
 let cachedAggregation: AggregatedResponse | null = null;
 let lastAggregatedAt: number = 0;
-const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutes cache
+const CACHE_TTL_MS = 30 * 60 * 1000; // 30 minutes cache
 
 /**
  * Normalizes an address string for fuzzy matching

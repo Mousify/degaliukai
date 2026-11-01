@@ -1,0 +1,6519 @@
+[
+  {
+    "id": "osm-55.6935-21.4140",
+    "name": "Adukesta",
+    "brand": "Nepriklausoma",
+    "lat": 55.6935328,
+    "lng": 21.4139903,
+    "address": "Adukesta",
+    "city": "Adukesta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5664-21.9957",
+    "name": "Agroserviso kooperatyvas Pynauja",
+    "brand": "Nepriklausoma",
+    "lat": 55.5663846,
+    "lng": 21.9957076,
+    "address": "Agroserviso kooperatyvas Pynauja",
+    "city": "Agroserviso kooperatyvas Pynauja",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5226-25.0897",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.5225549,
+    "lng": 25.0896541,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2442-24.7498",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.2442212,
+    "lng": 24.7497888,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7209-25.2848",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.7209466,
+    "lng": 25.2848169,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5621-23.3664",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.5621366,
+    "lng": 23.3664041,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6773-25.0789",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.6773131,
+    "lng": 25.0788833,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5118-25.6000",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.5118318,
+    "lng": 25.5999526,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3321-26.1671",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.3321014,
+    "lng": 26.1670868,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5992-26.4200",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.5991946,
+    "lng": 26.4200301,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7108-25.2404",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.7108386,
+    "lng": 25.240395,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.2042-25.6211",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.2041536,
+    "lng": 25.6210938,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7841-22.8735",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.7841095,
+    "lng": 22.8734921,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6849-25.3527",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.6849004,
+    "lng": 25.352675,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9202-23.4259",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.9202197,
+    "lng": 23.4259371,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4956-25.5816",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.4956157,
+    "lng": 25.5816155,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3885-23.8202",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.3884753,
+    "lng": 23.8201924,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6512-25.1502",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.6512347,
+    "lng": 25.1502038,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0247-24.9855",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.0246527,
+    "lng": 24.9854701,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5941-25.8336",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 55.594078,
+    "lng": 25.8335532,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6658-25.2741",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.665833,
+    "lng": 25.2740614,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7034-25.4158",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.7034117,
+    "lng": 25.4158469,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3203-23.1401",
+    "name": "Alauša",
+    "brand": "Alauša",
+    "lat": 54.3202596,
+    "lng": 23.1400981,
+    "address": "Alauša",
+    "city": "Alauša",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3588-21.5033",
+    "name": "Andopas",
+    "brand": "Nepriklausoma",
+    "lat": 55.358795,
+    "lng": 21.5033396,
+    "address": "Andopas",
+    "city": "Andopas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5940-23.1796",
+    "name": "Antivis",
+    "brand": "Nepriklausoma",
+    "lat": 55.5940085,
+    "lng": 23.1795845,
+    "address": "Antivis",
+    "city": "Antivis",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6346-23.7334",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.6345988,
+    "lng": 23.733381,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9181-23.2976",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.9180981,
+    "lng": 23.2975743,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2073-23.5803",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 56.2073146,
+    "lng": 23.5802999,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9236-23.3503",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.923601,
+    "lng": 23.3502576,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8154-23.5435",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.8154361,
+    "lng": 23.543512,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9163-23.2470",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.916276,
+    "lng": 23.2469726,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9565-23.3085",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.9564535,
+    "lng": 23.308507,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9406-23.3261",
+    "name": "Apsaga",
+    "brand": "Nepriklausoma",
+    "lat": 55.9405574,
+    "lng": 23.326147,
+    "address": "Apsaga",
+    "city": "Apsaga",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0149-22.9512",
+    "name": "Atsiauta",
+    "brand": "Nepriklausoma",
+    "lat": 56.0148887,
+    "lng": 22.9512465,
+    "address": "Atsiauta",
+    "city": "Atsiauta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7219-24.3915",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7219293,
+    "lng": 24.3914623,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3867-24.0329",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.3867497,
+    "lng": 24.0329132,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5339-23.3533",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.5338665,
+    "lng": 23.3533063,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0040-22.2447",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.0040466,
+    "lng": 22.2447205,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2770-23.9558",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.2770244,
+    "lng": 23.9558265,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7007-21.1989",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7006967,
+    "lng": 21.1989144,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3051-22.3510",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.3050536,
+    "lng": 22.3509843,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2175-25.4034",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.2174941,
+    "lng": 25.4033982,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0323-24.9672",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.0322768,
+    "lng": 24.9671905,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2409-24.7397",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.2409322,
+    "lng": 24.7397265,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-53.9998-23.9879",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 53.9997804,
+    "lng": 23.9878668,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7209-21.1529",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7209234,
+    "lng": 21.1528796,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5870-23.3845",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.5869759,
+    "lng": 23.3844754,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.1639-22.1016",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.1639128,
+    "lng": 22.1015761,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6668-25.2509",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.6668155,
+    "lng": 25.2508737,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7677-25.2723",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7676992,
+    "lng": 25.2723395,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.0303-23.9835",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.0302633,
+    "lng": 23.9835119,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0581-24.2635",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.0581066,
+    "lng": 24.2635192,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9051-23.8995",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.9050561,
+    "lng": 23.8995314,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.1691-24.2078",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.1691096,
+    "lng": 24.2078126,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0824-24.2709",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.08238,
+    "lng": 24.2709349,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8255-23.5233",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.8255192,
+    "lng": 23.5233024,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6405-25.2674",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.6404998,
+    "lng": 25.2674053,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7109-25.1617",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7109034,
+    "lng": 25.1616645,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2234-23.5977",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.2234121,
+    "lng": 23.5976514,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8613-23.9586",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.8613118,
+    "lng": 23.9585598,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9744-23.8690",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.9744381,
+    "lng": 23.8690397,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4954-25.5749",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.4954038,
+    "lng": 25.5748768,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7373-26.2726",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7373175,
+    "lng": 26.2726414,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7685-25.1959",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7685374,
+    "lng": 25.1959108,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8633-25.4910",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.8632965,
+    "lng": 25.4909788,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6811-25.4121",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.681138,
+    "lng": 25.4121497,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6608-25.2336",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.6608042,
+    "lng": 25.2335618,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7240-25.2823",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7240225,
+    "lng": 25.2822581,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6923-25.3464",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.6923017,
+    "lng": 25.3464316,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7223-25.3173",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7222813,
+    "lng": 25.3173368,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7792-25.3423",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7792454,
+    "lng": 25.342348,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.2183-24.5659",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.2183115,
+    "lng": 24.5658985,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.2565-24.5470",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.2565096,
+    "lng": 24.5470442,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6273-24.9486",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.6273445,
+    "lng": 24.9486474,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7305-22.3769",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7305276,
+    "lng": 22.3768906,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2433-22.2530",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.2433085,
+    "lng": 22.2530308,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3529-21.4631",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.3529159,
+    "lng": 21.4631192,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5702-22.1767",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.5701829,
+    "lng": 22.1766579,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4901-22.2000",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.4900924,
+    "lng": 22.2000153,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9576-23.3161",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.9575751,
+    "lng": 23.3160514,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3180-25.3816",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.3179547,
+    "lng": 25.3815968,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9456-23.0459",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.9455784,
+    "lng": 23.0458561,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2594-21.5304",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.2594236,
+    "lng": 21.5304221,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0192-25.2221",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.0191846,
+    "lng": 25.2221443,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7195-21.9285",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.719486,
+    "lng": 21.9285202,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3356-23.1021",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.3355987,
+    "lng": 23.1020618,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3182-23.2108",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.3182325,
+    "lng": 23.2107965,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3708-23.1333",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.3708352,
+    "lng": 23.1332925,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8007-23.5654",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.8007344,
+    "lng": 23.5654228,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7633-23.7429",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.7633302,
+    "lng": 23.7429481,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7610-23.7132",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7610291,
+    "lng": 23.7132276,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6286-23.9585",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.6286096,
+    "lng": 23.9585009,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0441-21.8157",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.0440798,
+    "lng": 21.8156768,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9155-21.0781",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.9154883,
+    "lng": 21.0781498,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9235-21.0746",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.9234922,
+    "lng": 21.0746419,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3224-23.1452",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.322391,
+    "lng": 23.1451911,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.2207-23.5090",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.220656,
+    "lng": 23.5089976,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7965-24.8888",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7964765,
+    "lng": 24.8888379,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7075-21.3803",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7074762,
+    "lng": 21.3803029,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5620-21.3089",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.5620308,
+    "lng": 21.3088866,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0385-23.6078",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.0384555,
+    "lng": 23.6078204,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8895-23.8047",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.8894951,
+    "lng": 23.804724,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8147-23.8724",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.8147478,
+    "lng": 23.8724001,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9076-23.8741",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.9076246,
+    "lng": 23.8740593,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9032-23.9827",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.9031672,
+    "lng": 23.982745,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8169-24.4366",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.8168684,
+    "lng": 24.4365619,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0990-24.3159",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.0990367,
+    "lng": 24.3159123,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.0946-23.8714",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.0946203,
+    "lng": 23.8714383,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.1974-24.7096",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 56.1973943,
+    "lng": 24.7095739,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5085-25.0962",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.5085429,
+    "lng": 25.096247,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3878-23.9962",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.3877836,
+    "lng": 23.9961549,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0782-22.7449",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.0782225,
+    "lng": 22.7449142,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9174-24.0351",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.9174208,
+    "lng": 24.0351057,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8857-23.9120",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.8857026,
+    "lng": 23.9119704,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0994-22.7733",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.0994447,
+    "lng": 22.7733407,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3185-22.8856",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 56.3184721,
+    "lng": 22.8855974,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7049-21.1633",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7049395,
+    "lng": 21.1633205,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7577-24.3679",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 55.7577056,
+    "lng": 24.3679216,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7029-25.2882",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.7028641,
+    "lng": 25.2881622,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5557-23.3753",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.5557487,
+    "lng": 23.3753029,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3243-23.1447",
+    "name": "Baltic Petroleum",
+    "brand": "Baltic Petroleum",
+    "lat": 54.3242637,
+    "lng": 23.1446602,
+    "address": "Baltic Petroleum",
+    "city": "Baltic Petroleum",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2407-24.7876",
+    "name": "Bemija",
+    "brand": "Nepriklausoma",
+    "lat": 55.2407279,
+    "lng": 24.7875991,
+    "address": "Bemija",
+    "city": "Bemija",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2424-22.2500",
+    "name": "Bonsa",
+    "brand": "Nepriklausoma",
+    "lat": 55.2424387,
+    "lng": 22.2500213,
+    "address": "Bonsa",
+    "city": "Bonsa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4692-22.6789",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.4692054,
+    "lng": 22.678905,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9358-23.0778",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 55.9357609,
+    "lng": 23.0777888,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5127-25.6440",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 55.512656,
+    "lng": 25.6439842,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2643-25.4900",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 55.2643412,
+    "lng": 25.4900414,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6348-22.9454",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 55.6348039,
+    "lng": 22.9454237,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6007-23.0427",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 55.6006871,
+    "lng": 23.0427423,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6183-22.9014",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 55.6183034,
+    "lng": 22.9014006,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9038-23.8353",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 54.9038368,
+    "lng": 23.835313,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7862-24.7144",
+    "name": "Boost Petrol",
+    "brand": "Nepriklausoma",
+    "lat": 54.7862307,
+    "lng": 24.7143876,
+    "address": "Boost Petrol",
+    "city": "Boost Petrol",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5955-24.0267",
+    "name": "Borusta",
+    "brand": "Nepriklausoma",
+    "lat": 54.5955107,
+    "lng": 24.0266522,
+    "address": "Borusta",
+    "city": "Borusta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5780-24.5215",
+    "name": "Borusta",
+    "brand": "Nepriklausoma",
+    "lat": 54.5780333,
+    "lng": 24.5214824,
+    "address": "Borusta",
+    "city": "Borusta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5824-24.3178",
+    "name": "Borusta",
+    "brand": "Nepriklausoma",
+    "lat": 54.5824247,
+    "lng": 24.3177681,
+    "address": "Borusta",
+    "city": "Borusta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5762-23.3715",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.5762408,
+    "lng": 23.3714511,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.7043-21.1607",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.7042798,
+    "lng": 21.1607084,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.4246-24.0038",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.4245839,
+    "lng": 24.0038408,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9163-23.9866",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9163304,
+    "lng": 23.9865814,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9082-23.8649",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9081954,
+    "lng": 23.8648825,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.4961-25.5829",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.4961099,
+    "lng": 25.5829429,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9356-23.8704",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9356059,
+    "lng": 23.8704232,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.8105-24.3686",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.8105343,
+    "lng": 24.3685907,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7156-25.2908",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7156383,
+    "lng": 25.2908455,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6619-25.2352",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6618607,
+    "lng": 25.2352222,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6627-25.2350",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6626788,
+    "lng": 25.2350072,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9253-23.8907",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9253368,
+    "lng": 23.8906859,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.6727-24.3366",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.6727336,
+    "lng": 24.3366426,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.3505-21.4745",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.3504906,
+    "lng": 21.4745399,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.0102-23.9934",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.0102345,
+    "lng": 23.9933686,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.5050-25.6209",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.5050332,
+    "lng": 25.6209275,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7893-24.6762",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7893418,
+    "lng": 24.6761828,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9289-23.2977",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.9289315,
+    "lng": 23.2976526,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7604-25.2017",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7604144,
+    "lng": 25.2017075,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9016-23.8948",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.901639,
+    "lng": 23.89479,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.8991-23.9601",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.8990718,
+    "lng": 23.9601062,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.2269-23.5253",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.2268603,
+    "lng": 23.5253042,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7175-24.3711",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.7175307,
+    "lng": 24.3710533,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.8116-23.5500",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.8115821,
+    "lng": 23.5499624,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7133-25.2093",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7133427,
+    "lng": 25.2093416,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.3951-24.0382",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.3951041,
+    "lng": 24.0381516,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.7116-21.2630",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.7115551,
+    "lng": 21.2629614,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.6665-21.1728",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.6665175,
+    "lng": 21.1728115,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9770-22.2655",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.9770251,
+    "lng": 22.2654784,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6585-25.2664",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6584714,
+    "lng": 25.2664291,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-56.2586-23.6219",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 56.258599,
+    "lng": 23.6219146,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6519-25.2699",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6518582,
+    "lng": 25.2698857,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6712-25.2367",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.671165,
+    "lng": 25.2367336,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6366-23.0750",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6365822,
+    "lng": 23.074994,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.4841-22.5878",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.4840746,
+    "lng": 22.5877961,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.4614-22.6933",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.4614435,
+    "lng": 22.6933442,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9148-21.0780",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.9147672,
+    "lng": 21.0779512,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-56.1948-24.7719",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 56.1947763,
+    "lng": 24.7718989,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6863-25.0538",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6863227,
+    "lng": 25.0538406,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.3120-24.7865",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.3119846,
+    "lng": 24.7864719,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.8187-23.8578",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.8187356,
+    "lng": 23.8578192,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9523-25.5896",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.9523412,
+    "lng": 25.5896141,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9993-22.9898",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.9993472,
+    "lng": 22.9898068,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9350-23.9662",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9349677,
+    "lng": 23.9661671,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.8636-21.2174",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.8636191,
+    "lng": 21.2174129,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7358-25.2656",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7357746,
+    "lng": 25.2656017,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6953-25.2186",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.695327,
+    "lng": 25.2186438,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7091-25.2282",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7091164,
+    "lng": 25.2282165,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6232-25.1101",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.6231577,
+    "lng": 25.1101266,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9093-23.3195",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.909253,
+    "lng": 23.3194909,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.6877-21.1450",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.6876715,
+    "lng": 21.1450494,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.7318-24.3423",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.7317838,
+    "lng": 24.3422838,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-56.3025-22.3454",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 56.3025084,
+    "lng": 22.3454424,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.0706-24.2636",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.0705756,
+    "lng": 24.2635533,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7024-25.2648",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7024144,
+    "lng": 25.2648076,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.2482-22.3028",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.2482276,
+    "lng": 22.3027841,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.6928-21.1797",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.6928358,
+    "lng": 21.1796908,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7307-25.2390",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7306881,
+    "lng": 25.2390325,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7028-25.2640",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7028284,
+    "lng": 25.2639637,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9283-23.9738",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9283112,
+    "lng": 23.9738377,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9286-23.9286",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.9285506,
+    "lng": 23.9285957,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9126-23.2739",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 55.9126354,
+    "lng": 23.2738921,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7187-25.3007",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.7187205,
+    "lng": 25.3006737,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.8941-24.0067",
+    "name": "Circle K",
+    "brand": "Circle K",
+    "lat": 54.8941479,
+    "lng": 24.006731,
+    "address": "Circle K",
+    "city": "Circle K",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.5225-25.0883",
+    "name": "Degta",
+    "brand": "Nepriklausoma",
+    "lat": 55.5225227,
+    "lng": 25.0882808,
+    "address": "Degta",
+    "city": "Degta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9467-25.5908",
+    "name": "Degta",
+    "brand": "Nepriklausoma",
+    "lat": 55.9467321,
+    "lng": 25.5908148,
+    "address": "Degta",
+    "city": "Degta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7751-24.8104",
+    "name": "Degta",
+    "brand": "Nepriklausoma",
+    "lat": 54.7750839,
+    "lng": 24.8103981,
+    "address": "Degta",
+    "city": "Degta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5652-23.3686",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.5651634,
+    "lng": 23.3685594,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7178-25.2957",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7178098,
+    "lng": 25.2957079,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9081-23.9921",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.9080621,
+    "lng": 23.9920892,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5929-23.3896",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.5928803,
+    "lng": 23.3895944,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4082-24.0166",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.4081839,
+    "lng": 24.0166457,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8643-24.4365",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.8642965,
+    "lng": 24.4365125,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5584-23.2751",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.55839,
+    "lng": 23.2750922,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8019-23.5640",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.8018833,
+    "lng": 23.563958,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7075-24.9960",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7074854,
+    "lng": 24.9960282,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6434-25.0534",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6434471,
+    "lng": 25.0533723,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7535-25.2118",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7534874,
+    "lng": 25.2117614,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8734-25.0735",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.8734302,
+    "lng": 25.0734826,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8357-25.4603",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.8356963,
+    "lng": 25.460297,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6228-25.1054",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6227949,
+    "lng": 25.105351,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6272-25.1490",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6272083,
+    "lng": 25.1489711,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7104-25.1620",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7104024,
+    "lng": 25.1619868,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6528-25.3057",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6527598,
+    "lng": 25.3057145,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6410-25.1840",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6410411,
+    "lng": 25.1840384,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6684-25.1117",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6684314,
+    "lng": 25.1116518,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7399-25.2761",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7398655,
+    "lng": 25.2761001,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7235-25.2332",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7234768,
+    "lng": 25.2331672,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6579-23.0332",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.6579406,
+    "lng": 23.0331949,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3488-21.4692",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.3487503,
+    "lng": 21.4692276,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8989-23.2717",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.8989273,
+    "lng": 23.271654,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2588-23.4959",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.2587905,
+    "lng": 23.495941,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2782-23.3416",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.2782022,
+    "lng": 23.3416065,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0637-24.4263",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 56.0636977,
+    "lng": 24.426317,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9064-24.3387",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.9064134,
+    "lng": 24.3386508,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6698-24.3463",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.6697695,
+    "lng": 24.346336,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7102-24.3725",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.7101712,
+    "lng": 24.372473,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7319-24.3407",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.7319347,
+    "lng": 24.3407492,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7117-21.2651",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.7116895,
+    "lng": 21.2650704,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7903-21.1417",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.7902901,
+    "lng": 21.1417122,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6686-21.1591",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.6686073,
+    "lng": 21.1590868,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6612-21.1762",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 55.6612161,
+    "lng": 21.176215,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.1974-23.6261",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.1973794,
+    "lng": 23.6260932,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9516-23.8936",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.9516251,
+    "lng": 23.8935994,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7837-23.8767",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.7837414,
+    "lng": 23.8766697,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8095-23.8538",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.8095364,
+    "lng": 23.8537512,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9720-23.8591",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.9719611,
+    "lng": 23.8590736,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9324-23.9179",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.9323864,
+    "lng": 23.9179434,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8851-24.0061",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.8850807,
+    "lng": 24.0060754,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8593-23.8369",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.8592894,
+    "lng": 23.8369105,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2077-24.7708",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 56.2076735,
+    "lng": 24.7707614,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9275-23.9722",
+    "name": "Emsi",
+    "brand": "Emsi",
+    "lat": 54.9275048,
+    "lng": 23.972188,
+    "address": "Emsi",
+    "city": "Emsi",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9997-22.2413",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.9997421,
+    "lng": 22.2413457,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9566-22.3012",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.9566154,
+    "lng": 22.3011597,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3706-23.1199",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.3706348,
+    "lng": 23.1198939,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3136-22.3683",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 56.3136011,
+    "lng": 22.3682686,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6412-22.9274",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.6412056,
+    "lng": 22.9273762,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3362-23.9149",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.3361825,
+    "lng": 23.9149172,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8025-24.5022",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 54.8025073,
+    "lng": 24.5021573,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5089-23.9095",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 54.5089415,
+    "lng": 23.909535,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8845-21.2216",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.8844668,
+    "lng": 21.2216283,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3791-23.5285",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 54.379084,
+    "lng": 23.5285495,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4859-22.1994",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.4859058,
+    "lng": 22.1994081,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9447-25.3442",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.9446958,
+    "lng": 25.3442427,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0625-22.5825",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 56.0625487,
+    "lng": 22.5824778,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7863-22.6710",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.786269,
+    "lng": 22.6710399,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0632-21.5821",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 56.0631655,
+    "lng": 21.5820924,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.1404-21.9033",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.1404421,
+    "lng": 21.9032559,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3553-21.6800",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.3553048,
+    "lng": 21.6800324,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2839-21.8331",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 56.283883,
+    "lng": 21.8330537,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4016-22.5978",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.4015984,
+    "lng": 22.5977644,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2620-22.6918",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.2620436,
+    "lng": 22.69182,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9292-21.6199",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.9292317,
+    "lng": 21.6199133,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6198-22.2464",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.6197602,
+    "lng": 22.2464134,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.1943-22.6779",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 56.1943071,
+    "lng": 22.6779004,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9199-21.8571",
+    "name": "Eniris",
+    "brand": "Nepriklausoma",
+    "lat": 55.9199401,
+    "lng": 21.8570994,
+    "address": "Eniris",
+    "city": "Eniris",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.1601-22.7607",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 56.1601425,
+    "lng": 22.7607351,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3042-22.3603",
+    "name": "EU Verslas",
+    "brand": "Nepriklausoma",
+    "lat": 56.3042405,
+    "lng": 22.3603483,
+    "address": "EU Verslas",
+    "city": "EU Verslas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9081-21.8715",
+    "name": "EU Verslas",
+    "brand": "Nepriklausoma",
+    "lat": 55.9080759,
+    "lng": 21.8715092,
+    "address": "EU Verslas",
+    "city": "EU Verslas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9204-21.8323",
+    "name": "EU Verslas",
+    "brand": "Nepriklausoma",
+    "lat": 55.9203728,
+    "lng": 21.8322763,
+    "address": "EU Verslas",
+    "city": "EU Verslas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6019-23.1949",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 54.6019063,
+    "lng": 23.1949347,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2972-24.0770",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 55.2971586,
+    "lng": 24.0770201,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9528-23.0802",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 54.9528389,
+    "lng": 23.0802365,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9542-23.0246",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 54.954187,
+    "lng": 23.0245698,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0855-22.7455",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 55.0854894,
+    "lng": 22.745497,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0771-22.7510",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 55.0771463,
+    "lng": 22.7510279,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0825-22.7888",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 55.0825267,
+    "lng": 22.7887921,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0639-22.7807",
+    "name": "Gelvybė",
+    "brand": "Nepriklausoma",
+    "lat": 55.0638755,
+    "lng": 22.7807238,
+    "address": "Gelvybė",
+    "city": "Gelvybė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9527-23.0833",
+    "name": "GM Manufacturing Lithuania",
+    "brand": "Nepriklausoma",
+    "lat": 54.9527098,
+    "lng": 23.0832724,
+    "address": "GM Manufacturing Lithuania",
+    "city": "GM Manufacturing Lithuania",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7260-24.2362",
+    "name": "IĮ A. Praškevičiaus",
+    "brand": "Nepriklausoma",
+    "lat": 54.7259885,
+    "lng": 24.2361866,
+    "address": "IĮ A. Praškevičiaus",
+    "city": "IĮ A. Praškevičiaus",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2496-23.8519",
+    "name": "IĮ M.Augustinaičio",
+    "brand": "Nepriklausoma",
+    "lat": 55.2496276,
+    "lng": 23.8518839,
+    "address": "IĮ M.Augustinaičio",
+    "city": "IĮ M.Augustinaičio",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8303-22.8534",
+    "name": "IĮ Raimondo Balsio",
+    "brand": "Nepriklausoma",
+    "lat": 55.8303434,
+    "lng": 22.8533906,
+    "address": "IĮ Raimondo Balsio",
+    "city": "IĮ Raimondo Balsio",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5138-21.6098",
+    "name": "IĮ V.Marcinkevičiaus",
+    "brand": "Nepriklausoma",
+    "lat": 55.513817,
+    "lng": 21.6098326,
+    "address": "IĮ V.Marcinkevičiaus",
+    "city": "IĮ V.Marcinkevičiaus",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7032-25.2577",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.7031516,
+    "lng": 25.2576736,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6858-25.4307",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.6858009,
+    "lng": 25.4306625,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9247-23.2795",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.9246849,
+    "lng": 23.2795069,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9222-23.2971",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.9221776,
+    "lng": 23.2971101,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7449-24.3462",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.7448548,
+    "lng": 24.3462431,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9657-23.8795",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.9657488,
+    "lng": 23.879502,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7064-21.3634",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.7063775,
+    "lng": 21.3634197,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6432-22.9253",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.6432495,
+    "lng": 22.9252947,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3898-23.1307",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.3898185,
+    "lng": 23.1307021,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9542-23.2559",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.9542081,
+    "lng": 23.2558779,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6958-25.4321",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.6958191,
+    "lng": 25.4321327,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9272-23.9991",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.9271541,
+    "lng": 23.9990883,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6611-21.1780",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.6611499,
+    "lng": 21.1780322,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4854-22.1707",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.4854434,
+    "lng": 22.170707,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3769-21.4703",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.3768551,
+    "lng": 21.4702592,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9227-23.8700",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.9227361,
+    "lng": 23.8699726,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9043-23.8798",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.9042663,
+    "lng": 23.879801,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9340-23.9178",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.9339797,
+    "lng": 23.9178115,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8281-23.8734",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.8281492,
+    "lng": 23.8733614,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9439-24.0361",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.943946,
+    "lng": 24.0360682,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8970-21.8213",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.8970141,
+    "lng": 21.8213447,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5973-25.3151",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.5972765,
+    "lng": 25.3150506,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9361-23.8959",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 54.9360699,
+    "lng": 23.895897,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7514-21.1731",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.7513988,
+    "lng": 21.1730986,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6085-21.5940",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.6085076,
+    "lng": 21.5940438,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2717-22.2865",
+    "name": "Jozita",
+    "brand": "Jozita",
+    "lat": 55.2716812,
+    "lng": 22.2865244,
+    "address": "Jozita",
+    "city": "Jozita",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8979-23.3517",
+    "name": "Junasa, Degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.8978946,
+    "lng": 23.3517418,
+    "address": "Junasa, Degalinė",
+    "city": "Junasa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9480-23.3205",
+    "name": "Junasa, Degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.9480152,
+    "lng": 23.3205275,
+    "address": "Junasa, Degalinė",
+    "city": "Junasa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0997-23.2657",
+    "name": "Junasa, Degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 56.0997311,
+    "lng": 23.2656587,
+    "address": "Junasa, Degalinė",
+    "city": "Junasa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6461-25.6250",
+    "name": "Kenaoil",
+    "brand": "Nepriklausoma",
+    "lat": 54.6461207,
+    "lng": 25.6250464,
+    "address": "Kenaoil",
+    "city": "Kenaoil",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6307-24.9221",
+    "name": "Kriketas",
+    "brand": "Nepriklausoma",
+    "lat": 54.6307354,
+    "lng": 24.9221375,
+    "address": "Kriketas",
+    "city": "Kriketas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9014-22.5063",
+    "name": "Leosta",
+    "brand": "Nepriklausoma",
+    "lat": 55.9013528,
+    "lng": 22.5063076,
+    "address": "Leosta",
+    "city": "Leosta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3040-22.0414",
+    "name": "Madalva",
+    "brand": "Nepriklausoma",
+    "lat": 55.3039813,
+    "lng": 22.041423,
+    "address": "Madalva",
+    "city": "Madalva",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5693-25.1882",
+    "name": "Medelsta",
+    "brand": "Nepriklausoma",
+    "lat": 54.5692774,
+    "lng": 25.1881691,
+    "address": "Medelsta",
+    "city": "Medelsta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3705-23.1323",
+    "name": "Naftrus",
+    "brand": "Nepriklausoma",
+    "lat": 55.3704545,
+    "lng": 23.1322765,
+    "address": "Naftrus",
+    "city": "Naftrus",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3860-23.0426",
+    "name": "Naftrus",
+    "brand": "Nepriklausoma",
+    "lat": 55.3860252,
+    "lng": 23.0425655,
+    "address": "Naftrus",
+    "city": "Naftrus",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9707-23.5876",
+    "name": "Naftrus",
+    "brand": "Nepriklausoma",
+    "lat": 55.9706653,
+    "lng": 23.5875977,
+    "address": "Naftrus",
+    "city": "Naftrus",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4133-22.8219",
+    "name": "Naftrus",
+    "brand": "Nepriklausoma",
+    "lat": 55.4132945,
+    "lng": 22.8219247,
+    "address": "Naftrus",
+    "city": "Naftrus",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4244-24.9201",
+    "name": "Narjanta",
+    "brand": "Nepriklausoma",
+    "lat": 55.4244101,
+    "lng": 24.920094,
+    "address": "Narjanta",
+    "city": "Narjanta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6758-25.3587",
+    "name": "Narjanta",
+    "brand": "Nepriklausoma",
+    "lat": 55.6758397,
+    "lng": 25.3586683,
+    "address": "Narjanta",
+    "city": "Narjanta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9749-24.7402",
+    "name": "Narjanta",
+    "brand": "Nepriklausoma",
+    "lat": 55.9749463,
+    "lng": 24.7401942,
+    "address": "Narjanta",
+    "city": "Narjanta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5849-24.8784",
+    "name": "Narjanta",
+    "brand": "Nepriklausoma",
+    "lat": 55.5849011,
+    "lng": 24.878353,
+    "address": "Narjanta",
+    "city": "Narjanta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7734-24.7543",
+    "name": "Narjanta",
+    "brand": "Nepriklausoma",
+    "lat": 55.773414,
+    "lng": 24.7543274,
+    "address": "Narjanta",
+    "city": "Narjanta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8343-25.0093",
+    "name": "Narjanta",
+    "brand": "Nepriklausoma",
+    "lat": 55.8342534,
+    "lng": 25.0093246,
+    "address": "Narjanta",
+    "city": "Narjanta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4033-24.0372",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.4033392,
+    "lng": 24.037224,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9159-23.9842",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.9158528,
+    "lng": 23.9842208,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9140-23.9068",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.9140172,
+    "lng": 23.9067804,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5831-23.3709",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.5830872,
+    "lng": 23.3708642,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7078-21.2458",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.7078271,
+    "lng": 21.2458041,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9324-23.9955",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.9324394,
+    "lng": 23.9954792,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8674-23.8874",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.8674411,
+    "lng": 23.8874372,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8510-23.8428",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.8509628,
+    "lng": 23.8427709,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7909-24.6706",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.7909138,
+    "lng": 24.6705793,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6940-21.1404",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.6940292,
+    "lng": 21.1404364,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3143-22.3114",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 56.3143134,
+    "lng": 22.3113574,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3022-22.3425",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 56.302211,
+    "lng": 22.3425244,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2442-22.3037",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.2441935,
+    "lng": 22.3036607,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6631-25.3423",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.6630527,
+    "lng": 25.3423327,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7283-25.3277",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.7283229,
+    "lng": 25.327697,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7370-25.2321",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.7370264,
+    "lng": 25.2321203,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6959-25.2998",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.6958937,
+    "lng": 25.2997947,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9793-22.2267",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.9792811,
+    "lng": 22.2266501,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9139-23.3371",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.9138779,
+    "lng": 23.3370541,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4646-22.6847",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.4645856,
+    "lng": 22.6846818,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.5791-24.1704",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.5790843,
+    "lng": 24.1704375,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7340-24.2636",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.7339501,
+    "lng": 24.2635836,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7318-24.3031",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.7318163,
+    "lng": 24.303143,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7483-24.3909",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.7483108,
+    "lng": 24.3908806,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9033-21.1056",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.9033077,
+    "lng": 21.1056471,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6986-21.1673",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 55.6985927,
+    "lng": 21.167324,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8887-23.8185",
+    "name": "Orlen",
+    "brand": "Orlen",
+    "lat": 54.8886723,
+    "lng": 23.8184508,
+    "address": "Orlen",
+    "city": "Orlen",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8163-24.4331",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.8162686,
+    "lng": 24.433142,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2675-24.3710",
+    "name": "Pakelės namai",
+    "brand": "Nepriklausoma",
+    "lat": 56.2675336,
+    "lng": 24.3709738,
+    "address": "Pakelės namai",
+    "city": "Pakelės namai",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2725-24.3680",
+    "name": "Pakelės namai",
+    "brand": "Nepriklausoma",
+    "lat": 56.2725003,
+    "lng": 24.3679668,
+    "address": "Pakelės namai",
+    "city": "Pakelės namai",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7350-21.9240",
+    "name": "Plungės lagūna",
+    "brand": "Nepriklausoma",
+    "lat": 55.7349653,
+    "lng": 21.9240138,
+    "address": "Plungės lagūna",
+    "city": "Plungės lagūna",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9758-22.2637",
+    "name": "Prie Luksto",
+    "brand": "Nepriklausoma",
+    "lat": 55.9757625,
+    "lng": 22.2636643,
+    "address": "Prie Luksto",
+    "city": "Prie Luksto",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3275-26.1744",
+    "name": "Propano ir butano dujų centras",
+    "brand": "Nepriklausoma",
+    "lat": 55.3274812,
+    "lng": 26.1743633,
+    "address": "Propano ir butano dujų centras",
+    "city": "Propano ir butano dujų centras",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.1201-26.1314",
+    "name": "Propano ir butano dujų centras",
+    "brand": "Nepriklausoma",
+    "lat": 55.1200577,
+    "lng": 26.1314297,
+    "address": "Propano ir butano dujų centras",
+    "city": "Propano ir butano dujų centras",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8502-23.9657",
+    "name": "Regusa",
+    "brand": "Nepriklausoma",
+    "lat": 54.8502039,
+    "lng": 23.9657416,
+    "address": "Regusa",
+    "city": "Regusa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8501-23.9659",
+    "name": "Regusa",
+    "brand": "Nepriklausoma",
+    "lat": 54.8500758,
+    "lng": 23.9658723,
+    "address": "Regusa",
+    "city": "Regusa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7396-23.4957",
+    "name": "Regusa",
+    "brand": "Nepriklausoma",
+    "lat": 54.7395912,
+    "lng": 23.495684,
+    "address": "Regusa",
+    "city": "Regusa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6385-22.7633",
+    "name": "Regusa",
+    "brand": "Nepriklausoma",
+    "lat": 54.6385072,
+    "lng": 22.7632772,
+    "address": "Regusa",
+    "city": "Regusa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.3130-23.9779",
+    "name": "S.Savicko įmonė",
+    "brand": "Nepriklausoma",
+    "lat": 55.3130344,
+    "lng": 23.9779038,
+    "address": "S.Savicko įmonė",
+    "city": "S.Savicko įmonė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2915-23.9610",
+    "name": "S.Savicko įmonė",
+    "brand": "Nepriklausoma",
+    "lat": 55.2914644,
+    "lng": 23.9610485,
+    "address": "S.Savicko įmonė",
+    "city": "S.Savicko įmonė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.1669-23.9948",
+    "name": "S.Savicko įmonė",
+    "brand": "Nepriklausoma",
+    "lat": 55.1669461,
+    "lng": 23.9947974,
+    "address": "S.Savicko įmonė",
+    "city": "S.Savicko įmonė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2745-23.9445",
+    "name": "S.Savicko įmonė",
+    "brand": "Nepriklausoma",
+    "lat": 55.2745171,
+    "lng": 23.94452,
+    "address": "S.Savicko įmonė",
+    "city": "S.Savicko įmonė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4231-24.0180",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.4231173,
+    "lng": 24.0180464,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2590-24.7905",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.2590296,
+    "lng": 24.7905488,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2335-24.7813",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.2335389,
+    "lng": 24.7812539,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.8719-24.2132",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.8718634,
+    "lng": 24.2131696,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.1650-24.5157",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.1650015,
+    "lng": 24.5156759,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8147-23.5531",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.8146881,
+    "lng": 23.5531285,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9429-23.2816",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.9428566,
+    "lng": 23.2815923,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4919-22.1992",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.4918801,
+    "lng": 22.1992386,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6519-25.1857",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.6518904,
+    "lng": 25.1856677,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5974-26.4034",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.5974245,
+    "lng": 26.403381,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0970-23.8062",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.0969665,
+    "lng": 23.8062494,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6568-21.1838",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.6568391,
+    "lng": 21.1838207,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6467-23.9305",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.646657,
+    "lng": 23.9304915,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7733-23.6563",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.7732619,
+    "lng": 23.6562553,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.9164-23.3017",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.9164321,
+    "lng": 23.3017107,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7238-25.1913",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.7237502,
+    "lng": 25.1912842,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3172-22.8849",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 56.3171914,
+    "lng": 22.8849441,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2981-22.8850",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 56.2981483,
+    "lng": 22.8850394,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4362-23.2048",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.4362017,
+    "lng": 23.2048232,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9236-24.0008",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.9235514,
+    "lng": 24.0008062,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2385-22.7508",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 56.2384613,
+    "lng": 22.7508234,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.2333-23.5399",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.2332685,
+    "lng": 23.5399459,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9773-23.4836",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.9773067,
+    "lng": 23.4835723,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9564-23.9047",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.9563583,
+    "lng": 23.9047389,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.0823-22.6109",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 55.0823177,
+    "lng": 22.6109227,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2608-21.5301",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 56.2607864,
+    "lng": 21.5300763,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9246-24.0791",
+    "name": "Saurida",
+    "brand": "Saurida",
+    "lat": 54.9245727,
+    "lng": 24.0791274,
+    "address": "Saurida",
+    "city": "Saurida",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.2289-23.6101",
+    "name": "Sigito Rimkevičiaus komercinė įmonė",
+    "brand": "Nepriklausoma",
+    "lat": 56.2289058,
+    "lng": 23.6100959,
+    "address": "Sigito Rimkevičiaus komercinė įmonė",
+    "city": "Sigito Rimkevičiaus komercinė įmonė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2526-23.9680",
+    "name": "Sigito Rimkevičiaus komercinė įmonė",
+    "brand": "Nepriklausoma",
+    "lat": 55.2525539,
+    "lng": 23.9679745,
+    "address": "Sigito Rimkevičiaus komercinė įmonė",
+    "city": "Sigito Rimkevičiaus komercinė įmonė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3819-23.9932",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 54.3818958,
+    "lng": 23.9931857,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7224-25.2710",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 54.7224306,
+    "lng": 25.2710144,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3838-23.6594",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 54.3838265,
+    "lng": 23.6593502,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9334-23.9434",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 54.9333747,
+    "lng": 23.9434467,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9025-23.7627",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 54.9025274,
+    "lng": 23.7627159,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9013-23.8544",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 54.9013066,
+    "lng": 23.8544141,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0695-24.3878",
+    "name": "Skulas",
+    "brand": "Nepriklausoma",
+    "lat": 56.0695216,
+    "lng": 24.3877815,
+    "address": "Skulas",
+    "city": "Skulas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7384-23.7104",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.7384213,
+    "lng": 23.7103589,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.7232-25.2418",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 54.7232491,
+    "lng": 25.2417562,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4986-25.5837",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 55.4985799,
+    "lng": 25.58371,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7876-24.4392",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 55.7875693,
+    "lng": 24.4392097,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.6345-23.4364",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 54.6344507,
+    "lng": 23.4363971,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8260-24.9795",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 55.8260389,
+    "lng": 24.9795139,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6853-21.1471",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 55.6852878,
+    "lng": 21.1471005,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.9291-24.0381",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 54.9290507,
+    "lng": 24.0381146,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4109-23.2067",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 54.4109163,
+    "lng": 23.2067177,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4077-24.0852",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.4077307,
+    "lng": 24.0852195,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.3660-24.1219",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 54.3660433,
+    "lng": 24.121869,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-54.4280-24.0012",
+    "name": "Stateta",
+    "brand": "Stateta",
+    "lat": 54.4280382,
+    "lng": 24.0012011,
+    "address": "Stateta",
+    "city": "Stateta",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0130-21.1038",
+    "name": "Šventosios investicijos",
+    "brand": "Nepriklausoma",
+    "lat": 56.0129967,
+    "lng": 21.1037921,
+    "address": "Šventosios investicijos",
+    "city": "Šventosios investicijos",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-53.9903-24.0057",
+    "name": "Tomega",
+    "brand": "Nepriklausoma",
+    "lat": 53.9902929,
+    "lng": 24.005671,
+    "address": "Tomega",
+    "city": "Tomega",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.2275-21.7019",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.2275357,
+    "lng": 21.7018836,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7184-21.9322",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.7184462,
+    "lng": 21.9322116,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6269-21.9718",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.6269372,
+    "lng": 21.971782,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.5821-21.2853",
+    "name": "Lietuvos degalinė",
+    "brand": "Nepriklausoma",
+    "lat": 55.5820825,
+    "lng": 21.2852631,
+    "address": "Lietuvos degalinė",
+    "city": "Lietuvos degalinė",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7138-21.3866",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.7138358,
+    "lng": 21.3866257,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6872-21.6935",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.6872411,
+    "lng": 21.693525,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7123-21.3816",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.7122819,
+    "lng": 21.3816268,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.7284-21.1326",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.7283977,
+    "lng": 21.1325842,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.6697-21.1586",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.6696562,
+    "lng": 21.1586131,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.4644-21.4703",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.4643525,
+    "lng": 21.4702782,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8970-21.2443",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 55.8969624,
+    "lng": 21.2443159,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.0248-21.2650",
+    "name": "Trevena",
+    "brand": "Trevena",
+    "lat": 56.0248143,
+    "lng": 21.2649819,
+    "address": "Trevena",
+    "city": "Trevena",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3053-22.3425",
+    "name": "Tripletas",
+    "brand": "Nepriklausoma",
+    "lat": 56.3053044,
+    "lng": 22.3425281,
+    "address": "Tripletas",
+    "city": "Tripletas",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3180-22.0186",
+    "name": "Tumasa",
+    "brand": "Nepriklausoma",
+    "lat": 56.3179941,
+    "lng": 22.0186261,
+    "address": "Tumasa",
+    "city": "Tumasa",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-55.8275-24.9857",
+    "name": "Velseka",
+    "brand": "Nepriklausoma",
+    "lat": 55.8274897,
+    "lng": 24.9856952,
+    "address": "Velseka",
+    "city": "Velseka",
+    "amenities": [
+      "shop",
+      "wc"
+    ]
+  },
+  {
+    "id": "osm-56.3159-22.3024",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 56.3159271,
+    "lng": 22.3024172,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-56.3003-22.3606",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 56.300314,
+    "lng": 22.3606177,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9182-24.0400",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.9181898,
+    "lng": 24.0400004,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.2665-22.3112",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.2665492,
+    "lng": 22.311216,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.2408-22.3052",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.2408227,
+    "lng": 22.3051979,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.3847-24.0503",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.3846657,
+    "lng": 24.0502581,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9271-23.9746",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.9271432,
+    "lng": 23.974632,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9054-23.2601",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9054077,
+    "lng": 23.2601403,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7357-25.2586",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.7356742,
+    "lng": 25.2585745,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.4140-24.0100",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.4140144,
+    "lng": 24.0099863,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9179-23.8737",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.917916,
+    "lng": 23.8737463,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.9213-23.8105",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.9212806,
+    "lng": 23.8105054,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9264-23.3073",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9263967,
+    "lng": 23.3073055,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9441-23.3312",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9441048,
+    "lng": 23.3311629,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7640-25.1964",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.764005,
+    "lng": 25.1963938,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6992-25.2601",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6992147,
+    "lng": 25.2601006,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6673-25.1740",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6673035,
+    "lng": 25.1739621,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7137-25.2771",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.7136713,
+    "lng": 25.2771334,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7029-25.2040",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.7029463,
+    "lng": 25.204,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.7013-25.2038",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.7012835,
+    "lng": 25.2038148,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6529-25.2721",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6528659,
+    "lng": 25.2721099,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6333-25.1509",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6332642,
+    "lng": 25.1509101,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6692-25.1047",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.669237,
+    "lng": 25.1047333,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6475-25.3039",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6474899,
+    "lng": 25.3038617,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6711-25.2622",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6711004,
+    "lng": 25.2621559,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-54.6821-25.3139",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 54.6820717,
+    "lng": 25.3138709,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.4778-25.5815",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.4778167,
+    "lng": 25.5815185,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.4971-25.6306",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.497098,
+    "lng": 25.6306254,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.4901-25.6509",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.4900871,
+    "lng": 25.6509062,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.2460-24.7432",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.2460406,
+    "lng": 24.7431747,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9932-22.2403",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9932234,
+    "lng": 22.240301,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.0458-24.9426",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.0457654,
+    "lng": 24.9426036,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.3429-21.4967",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.3429077,
+    "lng": 21.496678,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9547-23.3162",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9546806,
+    "lng": 23.3161554,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9227-23.3579",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9227115,
+    "lng": 23.3578991,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-56.2700-21.5472",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 56.2699793,
+    "lng": 21.5472216,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.9030-21.8303",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.9030259,
+    "lng": 21.8303177,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-55.8984-21.8401",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 55.8983803,
+    "lng": 21.8400709,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  },
+  {
+    "id": "osm-56.0560-24.4074",
+    "name": "Viada",
+    "brand": "Viada",
+    "lat": 56.0560076,
+    "lng": 24.4074044,
+    "address": "Viada",
+    "city": "Viada",
+    "amenities": [
+      "shop",
+      "carwash",
+      "air_water",
+      "wc",
+      "24_hours"
+    ]
+  }
+]
