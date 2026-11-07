@@ -556,7 +556,6 @@ export default function HomePage() {
               selectedFuel={selectedFuel}
               nationalAvgPrice={nationalAvg}
               onSelectStation={(id) => setSelectedStationId(id)}
-              onReportPrice={handleReportPrice}
               onToggleFavorite={toggleFavorite}
               favorites={favorites}
             />
@@ -601,7 +600,6 @@ export default function HomePage() {
               selectedFuel={selectedFuel}
               nationalAvgPrice={nationalAvg}
               onSelectStation={(id) => setSelectedStationId(id)}
-              onReportPrice={handleReportPrice}
               onToggleFavorite={toggleFavorite}
               favorites={favorites}
             />
@@ -661,7 +659,7 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
-                <NationalTrendChart trends={trends} selectedFuel={selectedFuel} />
+                <NationalTrendChart trends={trends} nationalAverages={data?.nationalAverages || ({} as any)} />
               </div>
             </div>
 
@@ -703,7 +701,8 @@ export default function HomePage() {
         <StationDetailModal
           stationId={selectedStationId}
           onClose={() => setSelectedStationId(null)}
-          onReportPrice={handleReportPrice}
+          nationalAverages={data?.nationalAverages || ({} as any)}
+          onCommunityPriceUpdate={handleReportPrice}
           onToggleFavorite={toggleFavorite}
           isFavorite={favorites.has(selectedStationId)}
         />
@@ -714,7 +713,6 @@ export default function HomePage() {
         isOpen={isTripPlannerOpen}
         onClose={() => setIsTripPlannerOpen(false)}
         stations={data?.stations || []}
-        selectedFuel={selectedFuel}
         onSelectStation={(id) => {
           setIsTripPlannerOpen(false);
           setSelectedStationId(id);

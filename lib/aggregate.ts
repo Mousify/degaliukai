@@ -129,8 +129,6 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
     fuelPricesEuNationalRes,
     fuelPricesEuRes,
     openVanRes,
-
-
     osmOverpassRes,
     feed1Res,
     feed2Res,
@@ -216,37 +214,6 @@ export async function aggregateFuelData(forceRefresh = false): Promise<Aggregate
           description: 'Atviras Europos degalų kainų API',
           type: 'national_average' as const,
           status: 'degraded' as const,
-          stationsCount: 0,
-          lastChecked: fetchedAtIso,
-          errorMessage: String(err)
-        }
-      };
-    }),
-    fetchSauridaGithubPrices().catch((err) => {
-      console.error('[Source: Saurida GitHub] Failed:', err);
-      return {
-        prices: [],
-        rawMap: {},
-        status: {
-          id: 'saurida-github',
-          name: 'Saurida Community GitHub',
-          description: 'Atviro kodo Saurida degalinių kainų archyvas',
-          type: 'supplementary' as const,
-          status: 'degraded' as const,
-          stationsCount: 0,
-          lastChecked: fetchedAtIso,
-          errorMessage: String(err)
-        }
-      };
-    }),
-    fetchRapidApiFuelPrices().catch((err) => {
-      return {
-        status: {
-          id: 'rapidapi-valev-labs',
-          name: 'RapidAPI (Valev Labs)',
-          description: 'Europos kuro kainų API',
-          type: 'cross_check' as const,
-          status: 'disabled' as const,
           stationsCount: 0,
           lastChecked: fetchedAtIso,
           errorMessage: String(err)
